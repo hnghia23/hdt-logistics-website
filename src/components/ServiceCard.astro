@@ -1,0 +1,15 @@
+---
+const { title, text, icon } = Astro.props;
+---
+
+<div class="p-6 border rounded-lg bg-white shadow-sm">
+    <div class="flex items-center gap-4">
+        <div
+            class="h-12 w-12 flex items-center justify-center rounded bg-blue-50"
+        >
+            {icon}
+        </div>
+        <h3 class="font-semibold">{title}</h3>
+    </div>
+    <p class="mt-4 text-sm text-gray-600">{text}</p>
+</div>

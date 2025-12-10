@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactForm from "../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <section class="container-max px-4 py-12">
+        <h1 class="text-3xl font-bold mb-4">Liên hệ</h1>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div>
+                <h4 class="font-semibold">Địa chỉ</h4>
+                <p>Hà Nội, Việt Nam</p>
+                <h4 class="mt-4 font-semibold">Email</h4>
+                <p>info@hdt-logistics.vn</p>
+            </div>
+            <div>
+                <ContactForm />
+            </div>
+        </div>
+    </section>
+</BaseLayout>

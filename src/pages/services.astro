@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<BaseLayout>
+    <section class="container-max px-4 py-12">
+        <h1 class="text-3xl font-bold mb-6">Dịch vụ</h1>
+        <div class="grid md:grid-cols-3 gap-6">
+            <ServiceCard
+                title="Vận chuyển đường bộ"
+                text="Mạng lưới phủ toàn quốc"
+                icon="🚚"
+            />
+            <ServiceCard
+                title="Vận chuyển đường biển"
+                text="Tối ưu chi phí xuất nhập khẩu"
+                icon="🛳️"
+            />
+            <ServiceCard
+                title="Kho bãi"
+                text="Hệ thống kho tiêu chuẩn"
+                icon="🏭"
+            />
+        </div>
+    </section>
+</BaseLayout>

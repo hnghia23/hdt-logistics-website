@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import ContactForm from "../components/ContactForm.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+	<Hero />
+
+	<section class="container-max px-4 py-12">
+		<h2 class="text-2xl font-semibold mb-6">Dịch vụ chính</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+			<ServiceCard
+				title="Vận chuyển đường bộ"
+				text="Giao nhận nội địa, xe tải đầy đủ kích cỡ."
+				icon="🚚"
+			/>
+			<ServiceCard
+				title="Vận chuyển đường biển"
+				text="Lựa chọn tuyến quốc tế với giá cạnh tranh."
+				icon="📦"
+			/>
+			<ServiceCard
+				title="Kho bãi & 3PL"
+				text="Kho lạnh, kho thường, quản lý tồn kho."
+				icon="🏭"
+			/>
+		</div>
+	</section>
+
+	<section class="bg-gray-50 py-12">
+		<div class="container-max px-4">
+			<h3 class="text-xl font-semibold mb-4">Liên hệ để nhận báo giá</h3>
+			<div class="grid md:grid-cols-2 gap-6">
+				<div>
+					<p>
+						Gửi thông tin yêu cầu, chúng tôi sẽ liên hệ lại trong
+						24h.
+					</p>
+				</div>
+				<div>
+					<!-- Contact form component -->
+					<import src="../components/ContactForm.astro"></import>
+					<ContactForm />
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
