@@ -1,0 +1,584 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                GỬI HÀNG TỪ MỸ VỀ VIỆT NAM
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <!-- <p class="text-base md:text-lg leading-relaxed text-white">
+                Gửi hàng đi Mỹ & Canada nhanh chóng – an toàn – giá tốt
+            </p> -->
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane Logistics là đơn vị chuyên cung cấp dịch vụ vận
+                    chuyển hàng hóa từ Mỹ về Việt Nam với giải pháp tối ưu về
+                    chi phí – thời gian – độ an toàn.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Với nhiều năm kinh nghiệm trong lĩnh vực logistics quốc tế,
+                    Skylane hỗ trợ đa dạng nhu cầu: gửi hàng cá nhân, hàng kinh
+                    doanh, hàng thương mại điện tử, hàng order hộ… từ Mỹ về Việt
+                    Nam một cách nhanh chóng và minh bạch.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">Chúng tôi cam kết:</p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Tuyến vận chuyển ổn định, lịch bay đều
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Quy trình xử lý chuyên nghiệp, rõ ràng
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Hỗ trợ khách hàng xuyên suốt từ lúc nhận hàng đến
+                            khi giao tận tay tại Việt Nam</span
+                        >
+                    </li>
+                </ul>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-center text-3xl font-semibold mb-6 leading-tight">
+                Hệ thống kho bãi
+                <div
+                    class="mx-auto mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane sở hữu hệ thống kho trải rộng tại các bang lớn của
+                    Mỹ, thuận tiện cho việc nhận hàng từ các website thương mại
+                    điện tử, shop nội địa hoặc người gửi trực tiếp.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Các bang nhận hàng:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"> Oregon (OR) </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"> Texas (TX) </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"> California (CA) </span>
+                    </li>
+                </ul>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Đặc điểm hệ thống kho Skylane:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Nhận hầu hết các loại mặt hàng hợp pháp theo quy
+                            định xuất – nhập khẩu
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Không giới hạn nguồn gửi: Amazon, Walmart, Bestbuy,
+                            eBay, shop Mỹ, cá nhân…
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Hỗ trợ nhận hàng fake name (tên người nhận khác với
+                            tên khách gửi)
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Kiểm đếm – đóng gói – gom hàng theo yêu cầu
+                        </span>
+                    </li>
+                </ul>
+
+                <p class="font-semibold">
+                    <span class="text-red-600"> Lưu ý: </span>Skylane không nhận
+                    hàng thuộc danh mục cấm theo quy định của Mỹ và Việt Nam.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Những mặt hàng cần mua bảo hiểm -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Những mặt hàng cần mua bảo hiểm
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <p class="text-base leading-relaxed">
+                    Để đảm bảo quyền lợi tối đa cho khách hàng, Skylane <strong>
+                        khuyến nghị mua bảo hiểm
+                    </strong> đối với các mặt hàng có giá trị cao hoặc dễ rủi ro trong
+                    quá trình vận chuyển.
+                </p>
+                <p class="font-semibold text-base leading-relaxed">
+                    Các nhóm hàng nên mua bảo hiểm:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Điện thoại, laptop, máy tính bảng, thiết bị điện tử
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Đồng hồ, trang sức, phụ kiện cao cấp
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Mỹ phẩm, thực phẩm chức năng giá trị cao</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Hàng dễ vỡ, hàng có pin, hàng nhạy cảm</span
+                        >
+                    </li>
+                </ul>
+
+                <p class="text-base leading-relaxed">
+                    Việc mua bảo hiểm giúp khách hàng <strong
+                        >an tâm hơn trong trường hợp thất lạc, hư hỏng hoặc sự
+                        cố ngoài ý muốn
+                    </strong> trong quá trình vận chuyển quốc tế.
+                </p>
+            </div>
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lưu ý khi gửi hàng quốc tế -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-12">
+                Lưu ý khi gửi hàng quốc tế
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+
+            <div class="mb-4">
+                Để quá trình vận chuyển diễn ra thuận lợi, khách hàng cần lưu ý
+                một số điểm sau:
+            </div>
+
+            <ul class="mx-8 space-y-3 pt-1 text-gray-700">
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        Khai báo <strong
+                            >đúng tên hàng, số lượng, giá trị</strong
+                        >
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        Không gửi hàng cấm, hàng vi phạm sở hữu trí tuệ theo quy
+                        định
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        >Một số mặt hàng có thể bị <strong
+                            >đánh thuế nhập khẩu hoặc kiểm tra chuyên ngành</strong
+                        > khi về Việt Nam</span
+                    >
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        >Thời gian vận chuyển có thể thay đổi tùy tình trạng
+                        thông quan, thời tiết hoặc chính sách hải quan
+                    </span>
+                </li>
+            </ul>
+
+            <div class="mt-6 mb-4">
+                Đội ngũ Skylane luôn <strong>tư vấn trước khi gửi</strong> để hạn
+                chế tối đa rủi ro cho khách hàng.
+            </div>
+        </div>
+    </section>
+
+    <!-- QUY TRÌNH -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 max-w-6xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">
+                Quy trình gửi hàng tại Skylane
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb mx-auto"
+                >
+                </div>
+            </h2>
+
+            <div class="mb-12 text-center font-semibold text-md">
+                Quy trình gửi hàng từ Mỹ về Việt Nam tại Skylane được tối ưu đơn
+                giản – rõ ràng
+            </div>
+
+            <!-- GRID: image | steps -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- LEFT IMAGE -->
+                <div class="hidden lg:block">
+                    <img
+                        src="/images/process-shipping.png"
+                        alt="Shipping process"
+                        class="w-full max-w-md mx-auto"
+                    />
+                </div>
+
+                <!-- STEPS -->
+                <ol class="relative space-y-4">
+                    <!-- Step 1 -->
+                    <li class="relative flex gap-6">
+                        <!-- timeline -->
+                        <div class="relative flex flex-col items-center">
+                            <!-- icon -->
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 bg-gray-100"
+                                alt=""
+                            />
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <!-- content -->
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 1
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Khách hàng liên hệ Skylane để được tư vấn tuyến
+                                đi, chi phí và lưu ý hàng hóa
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 2 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 2
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Skylane cung cấp địa chỉ kho tại Mỹ (OR / TX /
+                                CA) để khách gửi hàng
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 3 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 3
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Kho Mỹ nhận hàng, kiểm tra và cập nhật thông tin
+                                cho khách
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 4 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 4
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Hàng được vận chuyển về Việt Nam theo lịch bay
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 5 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 5
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Thông quan và giao hàng tận tay cho khách tại
+                                Việt Nam
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="mt-12 mb-12 text-center text-md">
+                Toàn bộ quá trình đều được<strong>
+                    theo dõi và hỗ trợ xuyên suốt</strong
+                > bởi đội ngũ Skylane.
+            </div>
+        </div>
+    </section>
+</BaseLayout>

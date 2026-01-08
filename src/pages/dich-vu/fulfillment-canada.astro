@@ -1,0 +1,467 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                FULFILLMENT CANADA
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <p class="text-base md:text-lg leading-relaxed text-white/90">
+                Giải pháp lưu kho – xử lý đơn – giao hàng nội địa Canada trọn
+                gói cho nhà bán hàng quốc tế
+            </p>
+        </div>
+    </section>
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Bán hàng vào thị trường Canada sẽ dễ hơn rất nhiều khi bạn
+                    không phải tự lo kho bãi, đóng gói hay vận chuyển từng đơn.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Với dịch vụ Fulfillment Canada của Skylane Logistics, hàng
+                    hóa được lưu kho trực tiếp tại Canada, xử lý đơn nhanh chóng
+                    và giao đến tay khách chỉ trong vài ngày.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane giúp bạn rút ngắn thời gian giao hàng, giảm chi phí
+                    logistics và tập trung hoàn toàn vào bán hàng.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Fulfillment Canada là gì?
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Fulfillment Canada là dịch vụ hoàn tất đơn hàng trọn gói
+                    dành cho các doanh nghiệp bán hàng online, đặc biệt ở thị
+                    trường Canada, bao gồm các khâu từ nhận hàng, lưu kho, xử lý
+                    đơn, đóng gói, đến vận chuyển đến tay khách hàng, giúp người
+                    bán tập trung vào kinh doanh mà không lo về logistics phức
+                    tạp ở Canada.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Dịch vụ này giúp nhà bán hàng rút ngắn thời gian giao hàng,
+                    giảm chi phí vận hành và nâng cao trải nghiệm khách hàng.
+                    Mọi hoạt động được quản lý tập trung, minh bạch và tối ưu
+                    chi phí cho người bán.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Dịch vụ Fulfillment Canada tại Skylane bao gồm những gì?
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Fulfillment Canada là dịch vụ lưu kho và xử lý đơn hàng tại
+                    Canada, trong đó Skylane sẽ thay bạn thực hiện toàn bộ các
+                    khâu:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Nhận hàng từ Việt Nam / Trung Quốc về Canada
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Lưu kho ngắn hạn và dài hạn tại kho Canada
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Pick & Pack theo từng đơn hàng</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Đóng gói theo tiêu chuẩn nội địa Canada</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >In nhãn, dán label, xử lý đơn</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Giao hàng nội địa Canada</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Hỗ trợ hoàn hàng (return), đổi trả khi phát sinh</span
+                        >
+                    </li>
+                </ul>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Mọi hoạt động được quản lý tập trung, minh bạch và tối ưu
+                    chi phí cho người bán.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Hỗ trợ cho thuê cổng thanh toán khi sử dụng Fulfillment Canada
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Bên cạnh dịch vụ Fulfillment Canada, Skylane còn hỗ trợ cho
+                    thuê cổng thanh toán nhằm giúp nhà bán hàng hoàn thiện toàn
+                    bộ chuỗi vận hành khi kinh doanh tại thị trường Canada.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Thực tế, nhiều nhà bán hàng gặp khó khăn trong việc:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Mở tài khoản ngân hàng tại Canada
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Đăng ký cổng thanh toán quốc tế
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Nhận tiền từ khách hàng bản địa khi chưa có pháp
+                            nhân</span
+                        >
+                    </li>
+                </ul>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Việc tích hợp cổng thanh toán trong gói Fulfillment Canada
+                    giúp nhà bán hàng nhận thanh toán thuận tiện hơn, giảm rào
+                    cản khi tiếp cận thị trường Canada.
+                </p>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane thực hiện đối soát hàng hóa và đơn hàng định kỳ hàng
+                    tuần, giúp nhà bán hàng nắm rõ tình trạng tồn kho, số đơn đã
+                    xử lý và các phát sinh nếu có. Việc đối soát thường xuyên
+                    giúp giúp nhà bán hàng chủ động dòng tiền và yên tâm trong
+                    quá trình vận hành bán hàng tại thị trường Canada.
+                </p>
+            </div>
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <!-- ƯU ĐIỂM DỊCH VỤ -->
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4">
+                <h2 class="text-3xl font-semibold mb-12 text-center">
+                    Vì sao nên sử dụng dịch vụ Fulfillment Canada của Skylane?
+                    <div
+                        class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/fast-delivery.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+
+                        <h3 class="text-xl font-semibold mb-4">
+                            Giao hàng nội địa Canada nhanh chóng
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Hàng hóa được lưu kho sẵn tại Canada giúp đơn hàng
+                            được xử lý và giao nhanh hơn nhiều so với gửi trực
+                            tiếp từng đơn nhỏ từ Việt Nam hoặc Trung Quốc. Thời
+                            gian giao hàng rút ngắn giúp tăng tỷ lệ hài lòng và
+                            quay lại mua hàng của khách
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/fast-delivery.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+
+                        <h3 class="text-xl font-semibold mb-4">
+                            Tối ưu chi phí logistics
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Thay vì phải tự thuê kho, thuê nhân sự và xử lý vận
+                            hành phức tạp, Skylane Logistics cung cấp dịch vụ
+                            fulfillment trọn gói, giúp bạn:
+                        </p>
+                        <ul
+                            class="mx-28 items-center mt-2 space-y-2 text-md font-semibold"
+                        >
+                            <li class="flex items-start gap-3">
+                                <img
+                                    src="/icons/approval.svg"
+                                    class="w-5 h-5 mt-1 shrink-0"
+                                />
+                                <span class="leading-relaxed">
+                                    Giảm chi phí cố định
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img
+                                    src="/icons/approval.svg"
+                                    class="w-5 h-5 mt-1 shrink-0"
+                                />
+                                <span class="leading-relaxed">
+                                    Trả phí theo số lượng đơn thực tế
+                                </span>
+                            </li>
+
+                            <li class="flex items-start gap-3">
+                                <img
+                                    src="/icons/approval.svg"
+                                    class="w-5 h-5 mt-1 shrink-0"
+                                />
+                                <span class="leading-relaxed"
+                                    >Hạn chế tối đa chi phí phát sinh</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/world-wide.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Quản lý tồn kho rõ ràng, minh bạch
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Skylane hỗ trợ kiểm soát tồn kho chặt chẽ, cập nhật
+                            số lượng hàng hóa thường xuyên, giúp nhà bán hàng
+                            chủ động kế hoạch bán hàng và nhập hàng
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/tracking-track.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Đối soát rõ ràng, minh bạch theo tuần
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Toàn bộ đơn hàng, tồn kho và doanh thu được đối soát
+                            định kỳ hàng tuần, giúp nhà bán hàng dễ dàng kiểm
+                            soát tình hình kinh doanh, hạn chế rủi ro và kịp
+                            thời điều chỉnh kế hoạch bán hàng
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KẾT LUẬN -->
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4 grid text-center">
+                <h2 class="text-3xl font-semibold mb-8">
+                    KẾT LUẬN
+                    <div
+                        class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mx-auto"
+                    >
+                    </div>
+                </h2>
+
+                <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                    Fulfillment Canada (FFM Canada) tại Skylane là giải pháp tối
+                    ưu giúp nhà bán hàng lưu kho tại Canada, xử lý đơn nhanh,
+                    giao hàng nội địa hiệu quả và chủ động dòng tiền thông qua
+                    đối soát doanh thu, hỗ trợ chuyển tiền định kỳ. Với dịch vụ
+                    trọn gói, quy trình minh bạch và hỗ trợ linh hoạt, Skylane
+                    giúp bạn bán hàng tại Canada dễ dàng và bền vững hơn
+                </p>
+
+                <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                    Liên hệ Skylane để được tư vấn chi tiết về dịch vụ Fulfillment Canada phù hợp với mô hình kinh doanh của bạn
+                </p>
+            </div>
+
+            <div class="bg-gray rounded-xl p-6">
+                <ContactForm />
+            </div>
+        </section>
+    </section>
+</BaseLayout>

@@ -5,14 +5,45 @@ import ContactForm from "../components/ContactForm.astro";
 
 <BaseLayout>
     <section class="container-max px-4 py-12">
-        <h1 class="text-3xl font-bold mb-4">Liên hệ</h1>
+        <h1 class="text-3xl font-bold mb-16">
+            Thông tin liên hệ Skylane Logistics
+        </h1>
+
+        
         <div class="grid md:grid-cols-2 gap-6">
             <div>
-                <h4 class="font-semibold">Địa chỉ</h4>
-                <p>Hà Nội, Việt Nam</p>
-                <h4 class="mt-4 font-semibold">Email</h4>
-                <p>info@hdt-logistics.vn</p>
+                <a class="flex items-center gap-2">
+                    <img src="/icons/address-blue.svg" class="w-5 h-5" />
+                    <span class="font-semibold"> Địa chỉ </span>
+                </a>
+                <p>1E ngõ 75 Hồ Tùng Mậu, Mai Dịch, Cầu Giấy, Hà Nội</p>
+
+                <a class="flex items-center gap-2">
+                    <img src="/icons/mail-blue.svg" class="mt-4 w-5 h-5" />
+                    <span class="mt-4 font-semibold"> Email </span>
+                </a>
+                <p>skylanelogisticsllc@gmail.com</p>
+
+                <a class="flex items-center gap-2">
+                    <img src="/icons/phone-blue.svg" class="mt-4 w-5 h-5" />
+                    <span class="mt-4 font-semibold"> Hotline </span>
+                </a>
+                <p>0941038126</p>
+
+                            <a class="flex items-center gap-2">
+                <img src="/icons/fb.svg" class="mt-4 w-5 h-5" />
+                <span class="mt-4 font-semibold"> Fanpage </span>
+            </a>
+            <p>
+                <a
+                    href="https://www.facebook.com/skylanelogs"
+                    target="_blank"
+                    class="text-hdtBlue hover:underline">Skylane Logistics</a>
+            </p>
             </div>
+
+
+
             <div>
                 <ContactForm />
             </div>

@@ -8,43 +8,271 @@ import ContactForm from "../components/ContactForm.astro";
 <BaseLayout>
 	<Hero />
 
-	<section class="container-max px-4 py-12">
-		<h2 class="text-2xl font-semibold mb-6">Dịch vụ chính</h2>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-			<ServiceCard
-				title="Vận chuyển đường bộ"
-				text="Giao nhận nội địa, xe tải đầy đủ kích cỡ."
-				icon="🚚"
-			/>
-			<ServiceCard
-				title="Vận chuyển đường biển"
-				text="Lựa chọn tuyến quốc tế với giá cạnh tranh."
-				icon="📦"
-			/>
-			<ServiceCard
-				title="Kho bãi & 3PL"
-				text="Kho lạnh, kho thường, quản lý tồn kho."
-				icon="🏭"
-			/>
-		</div>
-	</section>
-
-	<section class="bg-gray-50 py-12">
-		<div class="container-max px-4">
-			<h3 class="text-xl font-semibold mb-4">Liên hệ để nhận báo giá</h3>
-			<div class="grid md:grid-cols-2 gap-6">
-				<div>
-					<p>
-						Gửi thông tin yêu cầu, chúng tôi sẽ liên hệ lại trong
-						24h.
-					</p>
+	<section class="bg-gray-100 py-16">
+		<!-- About -->
+		<div class="container-max px-8">
+			<h2 class="text-2xl font-semibold text-hdtDark mb-6">
+				VỀ SKYLANE LOGISTICS
+				<div
+					class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-8"
+				>
 				</div>
+			</h2>
+
+			<div class="grid md:grid-cols-2 gap-8 items-start">
+				<!-- Nội dung giới thiệu -->
+				<div
+					class="space-y-4 text-gray-700 text-[15.5px] leading-relaxed font-sans"
+				>
+					<p class="leading-relaxed">
+						<strong class="font-semibold text-hdtDark">
+							Skylane Logistics
+						</strong>
+						là công ty cung cấp đa dạng dịch vụ Logistics, bao gồm gửi
+						hàng hai chiều từ Việt Nam đi nước ngoài, gửi hàng từ Trung
+						Quốc đến khắp thế giới, cũng như dịch vụ Fulfillment tại Australia,
+						Canada, EU...
+					</p>
+
+					<p class="leading-relaxed text-gray-600">
+						Chúng tôi mang đến giải pháp vận chuyển hàng hóa đến
+						khách hàng cuối cùng với sự tận tâm, tiện ích và phục vụ
+						bằng cả trái tim.
+					</p>
+
+					<ul class="mx-8 space-y-4 pt-1">
+						<li
+							class="relative pl-8
+                       before:absolute before:left-0 before:top-1
+                       before:w-5 before:h-5
+                       before:bg-[url('/public/icons/approval.svg')]
+                       before:bg-contain before:bg-no-repeat"
+						>
+							Giao hàng tận tay người nhận chỉ từ
+							<strong class="font-semibold text-hdtDark">
+								3 – 5 ngày</strong
+							>.
+						</li>
+
+						<li
+							class="relative pl-8 before:absolute before:left-0 before:top-1 before:w-5 before:h-5 before:bg-[url('/public/icons/approval.svg')] before:bg-contain before:bg-no-repeat"
+						>
+							Nhận hàng &amp; đóng gói tận nơi
+							<strong class="font-semibold text-hdtDark">
+								miễn phí</strong
+							>.
+						</li>
+
+						<li
+							class="relative pl-8 before:absolute before:left-0 before:top-1 before:w-5 before:h-5 before:bg-[url('/public/icons/approval.svg')] before:bg-contain before:bg-no-repeat"
+						>
+							Hỗ trợ đầy đủ các thủ tục
+							<strong class="font-semibold text-hdtDark">
+								xuất khẩu &amp; nhập khẩu
+							</strong>.
+						</li>
+
+						<li
+							class="relative pl-8 before:absolute before:left-0 before:top-1 before:w-5 before:h-5 before:bg-[url('/public/icons/approval.svg')] before:bg-contain before:bg-no-repeat"
+						>
+							Vận chuyển đa dạng các loại hàng hóa: Mỹ phẩm, thực
+							phẩm, hàng tiêu dùng, …
+						</li>
+
+						<li
+							class="relative pl-8 before:absolute before:left-0 before:top-1 before:w-5 before:h-5 before:bg-[url('/public/icons/approval.svg')] before:bg-contain before:bg-no-repeat"
+						>
+							Dịch vụ vận chuyển linh hoạt bằng
+							<strong class="font-semibold text-hdtDark">
+								đường bay</strong
+							> và
+							<strong class="font-semibold text-hdtDark">
+								đường biển</strong
+							>.
+						</li>
+					</ul>
+				</div>
+
+				<!-- Contact form -->
 				<div>
-					<!-- Contact form component -->
-					<import src="../components/ContactForm.astro"></import>
 					<ContactForm />
 				</div>
 			</div>
 		</div>
+
+		<!-- Dịch vụ nổi bật -->
+		<div class="container-max px-8 py-16">
+			<h2 class="text-2xl font-semibold mb-6">
+				DỊCH VỤ NỔI BẬT
+				<div
+					class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-8"
+				>
+				</div>
+			</h2>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<ServiceCard
+					title="Gửi hàng đi Mỹ"
+					description="Gửi hàng từ Việt Nam đến Mỹ nhanh chóng và an toàn."
+					image="/icons/usa.svg"
+					href="/dich-vu/gui-hang-di-my"
+				/>
+
+				<ServiceCard
+					title="Gửi hàng đi Úc"
+					description="Dịch vụ gửi hàng từ Trung Quốc đến Úc với giá tốt nhất."
+					image="/icons/australia.svg"
+					href="/dich-vu/gui-hang-di-uc"
+				/>
+
+				<ServiceCard
+					title="Gửi hàng đi Canada"
+					description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+					image="/icons/canada.svg"
+					href="/dich-vu/gui-hang-di-canada"
+				/>
+			</div>
+		</div>
+
+		<!-- Lý do chọn chúng tôi -->
+		<div class="container-max px-8 py-12">
+			<div class="mx-auto w-fit text-center mb-10">
+				<h2 class="text-2xl font-semibold mb-6">
+					TẠI SAO CHỌN SKYLANE LOGISTICS?
+					<div
+						class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-8 mx-auto"
+					>
+					</div>
+				</h2>
+			</div>
+
+			<div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+				<!-- Item -->
+				<div class="flex flex-col items-center text-center">
+					<img
+						src="/icons/experience.png"
+						alt="Kinh nghiệm vận chuyển"
+						class="h-16 w-16 mb-4 object-contain"
+						loading="lazy"
+					/>
+
+					<h3 class="font-semibold mb-2">+6 NĂM KINH NGHIỆM</h3>
+
+					<p class="text-sm muted">
+						Cam kết đảm bảo chất lượng từ quy trình đóng gói đến vận
+						chuyển hàng hóa an toàn, đúng tiến độ
+					</p>
+				</div>
+
+				<!-- Item -->
+				<div class="flex flex-col items-center text-center">
+					<img
+						src="/icons/flight.png"
+						alt="Kinh nghiệm vận chuyển"
+						class="h-16 w-16 mb-4 object-contain"
+						loading="lazy"
+					/>
+
+					<h3 class="font-semibold mb-2">
+						VẬN CHUYỂN ĐẾN HƠN 220 QUỐC GIA
+					</h3>
+
+					<p class="text-sm muted">
+						Mạng lưới phân phối trên 220 quốc gia, đáp ứng tối đa
+						nhu cầu chuyển phát nhanh quốc tế của khách hàng
+					</p>
+				</div>
+				<!-- Item -->
+				<div class="flex flex-col items-center text-center">
+					<img
+						src="/icons/deliver.png"
+						alt="Kinh nghiệm vận chuyển"
+						class="h-16 w-16 mb-4 object-contain"
+						loading="lazy"
+					/>
+
+					<h3 class="font-semibold mb-2">
+						HỖ TRỢ GIAO NHẬN DOOR TO DOOR
+					</h3>
+
+					<p class="text-sm muted">
+						Chúng tôi cam kết quy trình vận chuyển từ lúc nhân viên
+						đến tận nơi lấy hàng đến khi hàng hoá được trao tận tay
+						người nhận
+					</p>
+				</div>
+				<!-- Item -->
+				<div class="flex flex-col items-center text-center">
+					<img
+						src="/icons/tracking.png"
+						alt="Kinh nghiệm vận chuyển"
+						class="h-16 w-16 mb-4 object-contain"
+						loading="lazy"
+					/>
+
+					<h3 class="font-semibold mb-2">
+						THEO DÕI ĐƠN HÀNG ĐẾN TAY NGƯỜI NHẬN
+					</h3>
+
+					<p class="text-sm muted">
+						Cho phép theo dõi tình trạng đơn hàng mọi lúc, mọi nơi.
+						Chịu trách nhiệm giải quyết mọi vấn đề phát sinh (nếu
+						có)
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Đối tác -->
+		<section class="bg-gray-100 py-16 mb-16">
+			<div class="mx-auto w-fit text-center mb-8">
+				<h2 class="text-2xl font-semibold mb-4">
+					ĐỐI TÁC VẬN CHUYỂN
+					<div
+						class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-8 mx-auto"
+					>
+					</div>
+				</h2>
+			</div>
+			<div
+				class="grid grid-cols-2 sm:grid-cols-4 gap-10 items-center justify-items-center"
+			>
+				<img
+					src="/partners/DHL.jpg"
+					alt="DHL"
+					class="h-14 object-contain grayscale opacity-70
+       transition-all duration-300 ease-in-out
+       hover:grayscale-0 hover:opacity-100"
+					loading="lazy"
+				/>
+
+				<img
+					src="/partners/FedEx.png"
+					alt="FedEx"
+					class="h-14 object-contain grayscale opacity-70
+       transition-all duration-300 ease-in-out
+       hover:grayscale-0 hover:opacity-100"
+					loading="lazy"
+				/>
+
+				<img
+					src="/partners/UPS.png"
+					alt="UPS"
+					class="h-14 object-contain grayscale opacity-70
+       transition-all duration-300 ease-in-out
+       hover:grayscale-0 hover:opacity-100"
+					loading="lazy"
+				/>
+
+				<img
+					src="/partners/DPEX.png"
+					alt="DPEX"
+					class="h-14 object-contain grayscale opacity-70
+       transition-all duration-300 ease-in-out
+       hover:grayscale-0 hover:opacity-100"
+					loading="lazy"
+				/>
+			</div>
+		</section>
 	</section>
 </BaseLayout>

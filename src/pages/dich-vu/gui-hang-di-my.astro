@@ -1,0 +1,477 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                GỬI HÀNG ĐI MỸ
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <!-- <p class="text-base md:text-lg leading-relaxed text-white/90">
+                Skylane Logistics cung cấp dịch vụ vận chuyển hàng hóa từ các
+                thị trường quốc tế trọng điểm về Việt Nam, phục vụ đa dạng nhu
+                cầu từ gửi hàng cá nhân, mua hộ – order hộ, seller thương mại
+                điện tử đến doanh nghiệp nhập khẩu
+            </p> -->
+        </div>
+    </section>
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane cung cấp dịch vụ gửi hàng đi Mỹ với giải pháp vận
+                    chuyển linh hoạt, phù hợp cho cả khách hàng cá nhân lẫn
+                    người kinh doanh online và doanh nghiệp nhỏ.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Chúng tôi nhận gửi đa dạng mặt hàng như quần áo, mỹ phẩm,
+                    thực phẩm chức năng, hàng thương hiệu và hàng phục vụ thương
+                    mại điện tử, đồng thời hỗ trợ tư vấn chi tiết về loại hàng,
+                    hình thức khai báo và chi phí dự kiến trước khi vận chuyển.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Với tần suất bay đều, thời gian giao hàng ổn định và quy
+                    trình theo dõi minh bạch, Skylane giúp khách hàng chủ động
+                    kế hoạch gửi hàng, hạn chế rủi ro phát sinh và đảm bảo hàng
+                    hóa đến tay người nhận tại Mỹ an toàn, đúng thời gian.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ƯU ĐIỂM DỊCH VỤ -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-12 text-center">
+                Lý do lựa chọn Skylane Logistics
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                >
+                </div>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Uy tín và kinh nghiệm
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Skylane Logistics sở hữu kinh nghiệm thực tế trong lĩnh
+                        vực vận chuyển quốc tế, đặc biệt là Mỹ. Chúng tôi am
+                        hiểu quy trình, quy định hải quan và đặc thù từng thị
+                        trường, từ đó đưa ra giải pháp vận chuyển phù hợp cho
+                        từng loại hàng hóa
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Dịch vụ chất lượng
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Skylane cam kết mang đến dịch vụ vận chuyển nhanh chóng,
+                        an toàn và tối ưu chi phí. Mỗi lô hàng đều được kiểm
+                        soát chặt chẽ từ khâu tiếp nhận đến khi giao hàng, hạn
+                        chế tối đa rủi ro và phát sinh ngoài dự kiến
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/world-wide.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">Hỗ trợ tận tình</h3>
+                    <p class="font-semibold text-md">
+                        Đội ngũ nhân viên Skylane làm việc chuyên nghiệp, sẵn
+                        sàng tư vấn và hỗ trợ khách hàng trong suốt quá trình
+                        gửi hàng. Chúng tôi luôn đồng hành cùng khách hàng, từ
+                        bước tư vấn ban đầu đến khi hàng hóa được giao thành
+                        công
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/tracking-track.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">Đối tác uy tín</h3>
+                    <p class="font-semibold text-md">
+                        Skylane hợp tác với các hãng vận chuyển và đối tác
+                        logistics uy tín trên toàn cầu, đảm bảo mạng lưới vận
+                        hành ổn định và chất lượng dịch vụ đồng đều trên nhiều
+                        tuyến quốc tế
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUY TRÌNH -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 max-w-6xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">
+                Quy trình gửi hàng đi Mỹ
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb mx-auto"
+                >
+                </div>
+            </h2>
+
+            <div class="mb-12 text-center font-semibold text-md">
+                Quy trình gửi hàng tại Skylane Logistics được thiết kế tối ưu,
+                nhằm đảm bảo sự thuận tiện và an tâm cho khách hàng
+            </div>
+
+            <!-- GRID: image | steps -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- LEFT IMAGE -->
+                <div class="hidden lg:block">
+                    <img
+                        src="/images/process-shipping.png"
+                        alt="Shipping process"
+                        class="w-full max-w-md mx-auto"
+                    />
+                </div>
+
+                <!-- STEPS -->
+                <ol class="relative space-y-4">
+                    <!-- Step 1 -->
+                    <li class="relative flex gap-6">
+                        <!-- timeline -->
+                        <div class="relative flex flex-col items-center">
+                            <!-- icon -->
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 bg-gray-100"
+                                alt=""
+                            />
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <!-- content -->
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 1: Liên hệ và tư vấn
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Khách hàng liên hệ với Skylane Logistics để nhận
+                                tư vấn chi tiết về dịch vụ và chi phí. Đội ngũ
+                                Skylane sẽ kiểm tra tính phù hợp của hàng hóa,
+                                tư vấn phương án vận chuyển, hình thức khai báo
+                                và báo trước các chi phí dự kiến
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 2 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 2: Nhận hàng và kiểm tra thực tế
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Skylane tiến hành nhận hàng tại kho. Hàng hóa
+                                được kiểm tra sơ bộ, đối chiếu với thông tin đã
+                                tư vấn và hướng dẫn đóng gói phù hợp nhằm đảm
+                                bảo an toàn trong suốt quá trình vận chuyển quốc
+                                tế
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 3 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 3: Đóng gói và hoàn thiện hồ sơ vận chuyển
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Hàng hóa được SKylane hỗ trợ đóng gói theo tiêu
+                                chuẩn vận chuyển quốc tế, phù hợp với từng loại
+                                hàng. Skylane cũng sẽ hỗ trợ chuẩn bị chứng từ
+                                cần thiết và thực hiện khai báo hải quan theo
+                                đúng quy định, giúp quá trình xuất khẩu diễn ra
+                                nhanh chóng và minh bạch
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 4 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 4: Theo dõi và giao nhận
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Khách hàng có thể theo dõi hành trình của hàng
+                                hóa qua hệ thống theo dõi trực tuyến của Skylane
+                                và được hỗ trợ khi cần thiết
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-12">
+                Các loại hàng hóa được gửi
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+
+            <div class="mb-4 font-semibold">
+                Skylane Logistics nhận vận chuyển đa dạng các loại hàng hóa đi
+                Mỹ, bao gồm:
+            </div>
+
+            <ul class="mx-8 space-y-3 pt-1 text-gray-700">
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        <strong>Hàng hóa cá nhân:</strong> quần áo, giày dép, túi
+                        xách, phụ kiện thời trang và các sản phẩm tiêu dùng thông
+                        thường, mỹ phẩm, thực phẩm chức năng,…
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        <strong>Hàng hóa thương mại:</strong> Hàng mẫu, hàng kinh
+                        doanh, máy móc, thiết bị công nghiệp,…
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        ><strong>Tài liệu và hồ sơ:</strong> Giấy tờ, hợp đồng, tài
+                        liệu quan trọng,…</span
+                    >
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        ><strong>Hàng hóa đặc biệt:</strong> Hàng hóa cồng kềnh, dễ
+                        vỡ, hàng hóa cần bảo quản đặc biệt,…
+                    </span>
+                </li>
+            </ul>
+            <div class="flex gap-2 mt-6 text-gray-700">
+                <p class="font-semibold">
+                    <span class="text-red-600"> Lưu ý: </span>Một số mặt hàng bị
+                    hạn chế hoặc không được phép gửi đi Mỹ theo quy định của
+                    hãng vận chuyển và hải quan. Vì vậy, khách hàng nên liên hệ
+                    Skylane để được tư vấn và xác nhận trước khi gửi hàng, tránh
+                    các phát sinh không mong muốn.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Nội dung bên trái -->
+                <div>
+                    <h2 class="text-3xl font-semibold mb-8">
+                        Đối tác và mạng lưới
+                        <div
+                            class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue"
+                        >
+                        </div>
+                    </h2>
+
+                    <p class="leading-relaxed text-gray-600">
+                        Skylane Logistics hợp tác với các hãng vận chuyển uy tín
+                        như
+                        <span class="font-bold text-red-700"
+                            >FedEx, DHL, UPS,…</span
+                        >
+                        và có mạng lưới đối tác rộng khắp, đảm bảo dịch vụ vận chuyển
+                        đến mọi nơi trên nước Mỹ một cách nhanh chóng và an toàn.
+                        Nhờ mối quan hệ hợp tác chặt chẽ với các đối tác này, chúng
+                        tôi có thể cung cấp dịch vụ vận chuyển đáng tin cậy và hiệu
+                        quả nhất cho khách hàng.
+                    </p>
+                </div>
+
+                <!-- Hình ảnh bên phải -->
+                <div class="flex justify-center lg:justify-end">
+                    <img
+                        src="/public/doi-tac-van-chuyen.png"
+                        alt="Đối tác vận chuyển Skylane Logistics"
+                        class="w-full max-w-md rounded-xl shadow-md object-contain"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid">
+            <h2 class="text-3xl font-semibold mb-8 text-center">
+                KẾT LUẬN
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mx-auto"
+                >
+                </div>
+            </h2>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Skylane Logistics cam kết mang đến dịch vụ gửi hàng đi Mỹ nhanh
+                chóng, an toàn và tiết kiệm chi phí. Hãy liên hệ ngay với chúng
+                tôi để nhận được tư vấn chi tiết và những ưu đãi hấp dẫn. Đội
+                ngũ nhân viên của Skylane Logistics luôn sẵn sàng hỗ trợ bạn mọi
+                lúc, mọi nơi.
+            </p>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Hãy liên hệ với chúng tôi ngay hôm nay qua số điện thoại
+                <span class="text-hdtDark">0941&nbsp;038&nbsp;126</span>
+                hoặc điền form liên hệ bên dưới để được tư vấn và hỗ trợ tốt nhất.
+            </p>
+        </div>
+
+        <div class="bg-gray rounded-xl p-6">
+            <ContactForm />
+        </div>
+    </section>
+</BaseLayout>

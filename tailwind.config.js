@@ -4,13 +4,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        hdtDark: '#0b3a1d',
-        hdtGreen: '#3fae49',
-        hdtLight: '#7cd4b8',
-        hdtAqua: '#3cb7c4'
+        hdtDark: '#1e3a8a',
+        hdtBlue: '#3b82f6',
+        hdtLight: '#93c5fd',
+        hdtAqua: '#60a5fa'
       }
     },
   },
   plugins: [],
+
+  fontFamily: {
+  sans: ['Manrope', 'system-ui', 'sans-serif'],
+}
 }
 

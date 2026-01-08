@@ -4,24 +4,186 @@ import ServiceCard from "../components/ServiceCard.astro";
 ---
 
 <BaseLayout>
-    <section class="container-max px-4 py-12">
-        <h1 class="text-3xl font-bold mb-6">Dịch vụ</h1>
-        <div class="grid md:grid-cols-3 gap-6">
-            <ServiceCard
-                title="Vận chuyển đường bộ"
-                text="Mạng lưới phủ toàn quốc"
-                icon="🚚"
-            />
-            <ServiceCard
-                title="Vận chuyển đường biển"
-                text="Tối ưu chi phí xuất nhập khẩu"
-                icon="🛳️"
-            />
-            <ServiceCard
-                title="Kho bãi"
-                text="Hệ thống kho tiêu chuẩn"
-                icon="🏭"
-            />
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                DỊCH VỤ
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <p class="text-base md:text-lg leading-relaxed text-white">
+                Các loại dịch vụ phổ biến Skylane Logistics cung cấp
+            </p>
         </div>
     </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 griditems-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-12 leading-tight">
+                    Phổ biến nhất
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <ServiceCard
+                        title="Gửi hàng đi Mỹ"
+                        description="Gửi hàng từ Việt Nam đến Mỹ nhanh chóng và an toàn."
+                        image="/dich-vu/gui-hang-di-my.png"
+                        href="/dich-vu/gui-hang-di-my"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng đi Úc"
+                        description="Dịch vụ gửi hàng từ Trung Quốc đến Úc với giá tốt nhất."
+                        image="/icons/australia.svg"
+                        href="/dich-vu/gui-hang-di-uc"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng đi Canada"
+                        description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+                        image="/icons/canada.svg"
+                        href="/dich-vu/gui-hang-di-canada"
+                    />
+
+                                        <ServiceCard
+                        title="Order hàng Trung Quốc"
+                        description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+                        image="/icons/canada.svg"
+                        href="/dich-vu/order-hang-trung-quoc"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 griditems-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-12 leading-tight">
+                    Gửi hàng theo khu vực
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <ServiceCard
+                        title="Gửi hàng đi Châu Mỹ"
+                        description="Gửi hàng từ Việt Nam đến Mỹ nhanh chóng và an toàn."
+                        image="/dich-vu/gui-hang-di-my.png"
+                        href="/dich-vu/gui-hang-di-chau-my"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng đi Châu Âu"
+                        description="Dịch vụ gửi hàng từ Trung Quốc đến Úc với giá tốt nhất."
+                        image="/icons/australia.svg"
+                        href="/dich-vu/gui-hang-di-chau-au"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng đi Châu Á"
+                        description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+                        image="/icons/canada.svg"
+                        href="/dich-vu/gui-hang-di-chau-a"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 griditems-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-12 leading-tight">
+                    Gửi hàng về Việt Nam
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <ServiceCard
+                        title="Gửi hàng từ Mỹ về Việt Nam"
+                        description="Gửi hàng từ Việt Nam đến Mỹ nhanh chóng và an toàn."
+                        image="/dich-vu/gui-hang-di-my.png"
+                        href="/dich-vu/my-ve-vn"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng từ EU về Việt Nam"
+                        description="Dịch vụ gửi hàng từ Trung Quốc đến Úc với giá tốt nhất."
+                        image="/icons/australia.svg"
+                        href="/dich-vu/eu-ve-vn"
+                    />
+
+                    <ServiceCard
+                        title="Gửi hàng từ Canada về Việt Nam"
+                        description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+                        image="/icons/canada.svg"
+                        href="/dich-vu/canada-ve-vn"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 griditems-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-12 leading-tight">
+                    Fulfillment & Kho vận
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <ServiceCard
+                        title="Fulfillment Úc"
+                        description="Gửi hàng từ Việt Nam đến Mỹ nhanh chóng và an toàn."
+                        image="/dich-vu/gui-hang-di-my.png"
+                        href="/dich-vu/fulfillment-uc"
+                    />
+
+                    <ServiceCard
+                        title="Fulfillment Canada"
+                        description="Dịch vụ gửi hàng từ Trung Quốc đến Úc với giá tốt nhất."
+                        image="/icons/australia.svg"
+                        href="/dich-vu/fulfillment-canada"
+                    />
+
+                    <ServiceCard
+                        title="Fulfillment Đức"
+                        description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
+                        image="/icons/canada.svg"
+                        href="/dich-vu/fulfillment-duc"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-24 bg-gray-100"></div>
+
 </BaseLayout>

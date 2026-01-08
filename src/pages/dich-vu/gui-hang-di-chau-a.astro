@@ -1,0 +1,480 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                GỬI HÀNG ĐI CHÂU Á
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <p class="text-base md:text-lg leading-relaxed text-white">
+                Nhanh chóng, an toàn, tiết kiệm cùng Skylane Logistics
+            </p>
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Trong những năm gần đây, châu Á trở thành khu vực giao
+                    thương sôi động bậc nhất thế giới. Nhu cầu gửi hàng đi châu
+                    Á từ Việt Nam ngày càng tăng mạnh, không chỉ ở các doanh
+                    nghiệp xuất khẩu mà còn ở cá nhân, chủ shop online và các
+                    đơn vị thương mại điện tử. Tuy nhiên, để lựa chọn được một
+                    giải pháp vận chuyển nhanh – an toàn – tối ưu chi phí không
+                    phải là điều dễ dàng.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Với kinh nghiệm thực tiễn trong lĩnh vực vận chuyển quốc tế,
+                    Skylane Logistics mang đến dịch vụ gửi hàng đi châu Á chuyên
+                    nghiệp, hỗ trợ trọn gói từ tư vấn đến giao hàng, giúp khách
+                    hàng an tâm trong từng chuyến hàng.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Dịch Vụ Gửi Hàng Đi Châu Mỹ Tại Skylane Logistics
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Tuyến gửi hàng đi châu Á tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane Logistics nhận gửi hàng từ Việt Nam đi Châu Á với
+                    mạng lưới tuyến vận chuyển rộng khắp, đáp ứng nhu cầu gửi
+                    hàng cá nhân và hàng hóa kinh doanh.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Hiện nay, Skylane đang khai thác các tuyến chính bao gồm:
+                </p>
+
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Gửi hàng đi Trung Quốc
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Gửi hàng đi Nhật Bản
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">Gửi hàng đi Hàn Quốc</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">Gửi hàng đi Đài Loan</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Gửi hàng đi Singapore</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Gửi hàng đi Philippines, Indonesia</span
+                        >
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Gửi hàng đi Hong Kong, Macau</span
+                        >
+                    </li>
+                </ul>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Ngoài các tuyến phổ biến trên, Skylane còn hỗ trợ nhiều
+                    tuyến Châu Á khác theo nhu cầu thực tế của khách hàng, với
+                    phương án vận chuyển linh hoạt, thời gian ổn định và chi phí
+                    tối ưu cho từng lô hàng.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-12">
+                Skylane Logistics nhận những loại hàng nào?
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+
+            <div class="mb-4">
+                Skylane Logistics cung cấp dịch vụ gửi hàng đi Châu Á với khả
+                năng tiếp nhận đa dạng mặt hàng, đáp ứng cả nhu cầu gửi hàng cá
+                nhân lẫn vận chuyển hàng hóa kinh doanh. Mỗi loại hàng sẽ được
+                kiểm tra, tư vấn và phân loại cụ thể nhằm lựa chọn phương án vận
+                chuyển phù hợp, đảm bảo an toàn và tối ưu chi phí.
+            </div>
+
+            <div class="mb-4 font-semibold">Các mặt hàng Skylane nhận gửi:</div>
+
+            <ul class="mx-8 space-y-3 pt-1 text-gray-700">
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        <strong>Hàng cá nhân, quà tặng:</strong> quà biếu người thân,
+                        đồ dùng cá nhân, đồ gửi theo diện phi mậu dịch.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed">
+                        <strong>Quần áo, giày dép, phụ kiện:</strong> nhận gửi cả
+                        hàng mới, hàng kinh doanh số lượng lớn theo từng tuyến.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        ><strong
+                            >Mỹ phẩm, thực phẩm khô, thực phẩm chức năng:</strong
+                        > tiếp nhận theo quy định riêng của từng quốc gia, hỗ trợ
+                        tư vấn điều kiện thông quan.</span
+                    >
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        ><strong>Hàng kinh doanh, hàng số lượng lớn:</strong> phù
+                        hợp cho shop online, doanh nghiệp xuất hàng thường xuyên sang
+                        thị trường Châu Á.
+                    </span>
+                </li>
+
+                <li class="flex items-start gap-3">
+                    <img
+                        src="/icons/approval.svg"
+                        class="w-5 h-5 mt-1 shrink-0"
+                    />
+                    <span class="leading-relaxed"
+                        ><strong>Hàng cồng kềnh, hàng nặng:</strong> máy móc, thiết
+                        bị, kiện hàng kích thước lớn cần phương án vận chuyển tối
+                        ưu.
+                    </span>
+                </li>
+            </ul>
+            <div class="flex gap-2 mt-6 text-gray-700">
+                <p class="font-semibold">
+                    <span class="text-red-600"> Lưu ý: </span>Đối với các mặt
+                    hàng đặc thù, Skylane sẽ trao đổi và tư vấn kỹ trước khi
+                    nhận hàng để đảm bảo hồ sơ, chứng từ đầy đủ, thông quan
+                    thuận lợi và hạn chế tối đa rủi ro phát sinh trong quá trình
+                    vận chuyển.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ƯU ĐIỂM DỊCH VỤ -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-4 text-center">
+                Ưu điểm khi gửi hàng đi châu Á tại Skylane Logistics
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                >
+                </div>
+            </h2>
+            <div class="mb-10 text-center font-semibold">
+                Lựa chọn Skylane Logistics, khách hàng không chỉ sử dụng một
+                dịch vụ vận chuyển mà còn nhận được giải pháp gửi hàng đi Châu Á
+                trọn gói, tối ưu từ khâu tư vấn đến giao hàng cuối cùng.
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Tư vấn kĩ trước khi gửi
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Skylane luôn trao đổi chi tiết về loại hàng hóa, số
+                        lượng, trọng lượng và mục đích gửi để lựa chọn phương án
+                        vận chuyển phù hợp nhất. Việc tư vấn kỹ ngay từ đầu giúp
+                        hạn chế rủi ro, tránh chậm trễ và giảm thiểu các chi phí
+                        phát sinh không mong muốn trong quá trình vận chuyển
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Chi phí minh bạch, dễ dự toán
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Mọi chi phí đều được báo giá rõ ràng trước khi gửi hàng,
+                        giúp khách hàng chủ động ngân sách. Skylane tối ưu tuyến
+                        vận chuyển và phương thức giao nhận nhằm giảm chi phí
+                        nhưng vẫn đảm bảo chất lượng dịch vụ, hạn chế tối đa
+                        tình trạng phát sinh sau khi hàng đã đi
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/world-wide.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">
+                        Hỗ trợ đóng gói & chứng từ
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Hàng hóa được đóng gói đúng tiêu chuẩn vận chuyển quốc
+                        tế, phù hợp với từng loại hàng và từng tuyến Châu Á.
+                        Đồng thời, Skylane hỗ trợ chuẩn bị hồ sơ, khai báo hải
+                        quan và chứng từ cần thiết, giúp quá trình thông quan
+                        diễn ra thuận lợi và nhanh chóng
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/tracking-track.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">
+                        Theo dõi hành trình hàng hóa
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Trong suốt quá trình vận chuyển, khách hàng được cập
+                        nhật trạng thái đơn hàng thường xuyên. Đội ngũ Skylane
+                        luôn sẵn sàng hỗ trợ và xử lý nhanh khi phát sinh vấn
+                        đề, đảm bảo hàng hóa được giao đến tay người nhận an
+                        toàn và đúng tiến độ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tiêu chuẩn đóng gói -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                Tiêu chuẩn đóng gói & bảo quản hàng hóa khi gửi đi châu Á
+                <div
+                    class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                >
+                </div>
+            </h2>
+        </div>
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <p class="mx-8 text-base leading-relaxed">
+                    Một trong những yếu tố ảnh hưởng trực tiếp đến chất lượng
+                    hàng hóa khi vận chuyển quốc tế là đóng gói và bảo quản.
+                    Skylane Logistics tư vấn và hỗ trợ khách hàng:
+                </p>
+                <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"> Tuyến ổn định </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed">
+                            Xử lý linh hoạt địa chỉ nhận hàng
+                        </span>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <img
+                            src="/icons/approval.svg"
+                            class="w-5 h-5 mt-1 shrink-0"
+                        />
+                        <span class="leading-relaxed"
+                            >Phù hợp cho cả hàng lẻ và hàng số lượng lớn</span
+                        >
+                    </li>
+                </ul>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Việc tuân thủ đúng tiêu chuẩn đóng gói giúp hàng hóa thông
+                    quan thuận lợi và giảm thiểu rủi ro phát sinh chi phí không
+                    mong muốn.
+                </p>
+            </div>
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid text-center">
+            <h2 class="text-3xl font-semibold mb-8">
+                KẾT LUẬN
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mx-auto"
+                >
+                </div>
+            </h2>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Skylane không chỉ là đơn vị vận chuyển, mà là người đồng hành
+                cùng khách hàng trong từng chuyến hàng đi Châu Á. Chúng tôi hiểu
+                rằng mỗi kiện hàng đều mang giá trị, và trách nhiệm của Skylane
+                là đưa hàng đến đúng nơi, đúng thời gian, đúng chi phí như đã
+                cam kết
+            </p>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Hãy liên hệ ngay với Skylane Logistics để được tư vấn và trải
+                nghiệm dịch vụ gửi hàng tốt nhất
+            </p>
+        </div>
+
+        <div class="bg-gray rounded-xl p-6">
+            <ContactForm />
+        </div>
+    </section>
+</BaseLayout>

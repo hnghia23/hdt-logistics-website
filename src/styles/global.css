@@ -16,15 +16,33 @@ body {
     margin-right: auto;
 }
 
-/* Theme colors (kept in sync with tailwind.config.cjs) */
+/* Theme colors (kept in sync with tailwind.config.js) */
 :root {
-        --hdt-dark: #0b3a1d;
-        --hdt-green: #3fae49;
-        --hdt-light: #7cd4b8;
-        --hdt-aqua: #3cb7c4;
+        --hdt-dark: #1e3a8a;
+        --hdt-green: #3b82f6;
+        --hdt-light: #93c5fd;
+        --hdt-aqua: #60a5fa;
         --hdt-contrast: #ffffff;
         --hdt-muted: #6b7280;
 }
+
+/* Khi cuộn xuống */
+.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Khi ở top */
+.header-visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+
 
 @layer base {
     html, body {
@@ -47,7 +65,7 @@ body {
 
 @layer components {
     .btn-primary {
-        @apply inline-block px-5 py-3 rounded font-semibold text-white bg-hdtGreen;
+        @apply inline-block px-5 py-3 rounded font-semibold text-white bg-hdtBlue;
     }
 
     .btn-primary:hover {
@@ -55,7 +73,7 @@ body {
     }
 
     .btn-ghost {
-        @apply inline-block px-5 py-3 rounded border border-hdtGreen text-hdtGreen bg-transparent;
+        @apply inline-block px-5 py-3 rounded border border-hdtBlue text-hdtBlue bg-transparent;
     }
 
     .site-accent {

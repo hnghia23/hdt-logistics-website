@@ -1,0 +1,401 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                DỊCH VỤ CHUYỂN PHÁT NHANH QUỐC TẾ VỀ VIỆT NAM
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <p class="text-base md:text-lg leading-relaxed text-white/90">
+                Skylane Logistics cung cấp dịch vụ vận chuyển hàng hóa từ các
+                thị trường quốc tế trọng điểm về Việt Nam, phục vụ đa dạng nhu
+                cầu từ gửi hàng cá nhân, mua hộ – order hộ, seller thương mại
+                điện tử đến doanh nghiệp nhập khẩu
+            </p>
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Dịch vụ vận chuyển hàng từ Mỹ, EU, Canada, UK, ... về Việt
+                    Nam
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Với hệ thống kho quốc tế, tuyến vận chuyển ổn định và đội
+                    ngũ am hiểu quy trình xuất – nhập khẩu, Skylane cam kết mang
+                    đến giải pháp vận chuyển tối ưu về chi phí, thời gian và mức
+                    độ an toàn cho từng lô hàng
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Dịch vụ đặc biệt phù hợp cho:
+                </p>
+                <ul class="mx-8 space-y-4 pt-1">
+                    <li
+                        class="relative pl-8
+                       before:absolute before:left-0 before:top-1
+                       before:w-5 before:h-5
+                       before:bg-[url('/public/icons/approval.svg')]
+                       before:bg-contain before:bg-no-repeat"
+                    >
+                        Khách mua hàng từ nước ngoài về Việt Nam
+                    </li>
+                    <li
+                        class="relative pl-8
+                       before:absolute before:left-0 before:top-1
+                       before:w-5 before:h-5
+                       before:bg-[url('/public/icons/approval.svg')]
+                       before:bg-contain before:bg-no-repeat"
+                    >
+                        Seller kinh doanh hàng nhập khẩu, hàng xách tay
+                    </li>
+                    <li
+                        class="relative pl-8
+                       before:absolute before:left-0 before:top-1
+                       before:w-5 before:h-5
+                       before:bg-[url('/public/icons/approval.svg')]
+                       before:bg-contain before:bg-no-repeat"
+                    >
+                        Doanh nghiệp cần gom hàng từ nhiều quốc gia
+                    </li>
+                    <li
+                        class="relative pl-8
+                       before:absolute before:left-0 before:top-1
+                       before:w-5 before:h-5
+                       before:bg-[url('/public/icons/approval.svg')]
+                       before:bg-contain before:bg-no-repeat"
+                    >
+                        Khách có nhu cầu gửi hàng khó, hàng đặc thù
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white shadow rounded-xl p-6">
+                <ContactForm />
+            </div>
+        </div>
+
+        <!-- ƯU ĐIỂM DỊCH VỤ -->
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4">
+                <h2 class="text-3xl font-semibold mb-12 text-center">
+                    Ưu điểm dịch vụ Quốc tế - Việt Nam tại Skylane Logistics
+                    <div
+                        class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                    >
+                    </div>
+                </h2>
+
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/fast-delivery.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+
+                        <h3 class="text-xl font-semibold mb-4">
+                            Chi phí hợp lý, hạn chế phụ thu
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Báo giá rõ ràng theo từng loại hàng và tuyến vận
+                            chuyển, hạn chế tối đa các chi phí phát sinh ngoài
+                            dự kiến
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/fast-delivery.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+
+                        <h3 class="text-xl font-semibold mb-4">
+                            Thời gian vận chuyển nhanh và ổn định
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Nhiều lựa chọn tuyến bay, thời gian vận chuyển trung
+                            bình từ 7–15 ngày làm việc, tùy quốc gia và loại
+                            hàng
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/world-wide.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Hỗ trợ vận chuyển hàng khó
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Tư vấn và xử lý các mặt hàng đặc thù như mỹ phẩm,
+                            thực phẩm chức năng, hàng điện tử, pin, nam châm và
+                            hàng giá trị cao
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/tracking-track.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Đội ngũ theo dõi và hỗ trợ sát sao
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Mỗi lô hàng được theo dõi xuyên suốt, cập nhật tiến
+                            trình và xử lý nhanh khi phát sinh vấn đề
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/safety-goods.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Hệ thống kho quốc tế đa dạng
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Kho tại Mỹ, EU, Anh, Canada giúp linh hoạt trong
+                            việc nhận hàng, gom hàng và lên kế hoạch vận chuyển
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow">
+                        <img
+                            src="/icons/customer-support.svg"
+                            alt="Thời gian vận chuyển nhanh"
+                            class="mx-auto w-20 h-20 mb-4"
+                        />
+                        <h3 class="text-xl font-semibold mb-4">
+                            Tư vấn chứng từ và thủ tục hải quan
+                        </h3>
+                        <p class="font-semibold text-md">
+                            Hỗ trợ kiểm tra HS code, tư vấn khai báo hải quan và
+                            thuế phí, giúp hàng về Việt Nam thuận lợi, hạn chế
+                            rủi ro chậm trễ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUY TRÌNH -->
+        <section class="bg-gray-100 py-12 mb-16">
+            <div class="container-max px-4 max-w-6xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-12 text-center">
+                    Quy trình gửi hàng từ quốc tế về Việt Nam
+                    <div
+                        class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                    >
+                    </div>
+                </h2>
+
+                <!-- GRID: image | steps -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- LEFT IMAGE -->
+                    <div class="hidden lg:block">
+                        <img
+                            src="/images/process-shipping.png"
+                            alt="Shipping process"
+                            class="w-full max-w-md mx-auto"
+                        />
+                    </div>
+
+                    <!-- STEPS -->
+                    <ol class="relative space-y-4">
+                        <!-- Step 1 -->
+                        <li class="relative flex gap-6">
+                            <!-- timeline -->
+                            <div class="relative flex flex-col items-center">
+                                <!-- icon -->
+                                <img
+                                    src="/icons/icon-step.svg"
+                                    class="w-20 h-20 bg-gray-100"
+                                    alt=""
+                                />
+                                <!-- line down -->
+                                <span
+                                    class="absolute top-20 h-full w-px bg-gray-300"
+                                ></span>
+                            </div>
+
+                            <!-- content -->
+                            <div
+                                class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                            >
+                                <span class="text-hdtDark font-bold mb-1">
+                                    Bước 1
+                                </span>
+                                <span
+                                    class="text-gray-700 leading-relaxed text-justify"
+                                >
+                                    Liên hệ Skylane Logistics để được tư vấn
+                                    tuyến vận chuyển và báo giá
+                                </span>
+                            </div>
+                        </li>
+
+                        <!-- Step 2 -->
+                        <li class="relative flex gap-6">
+                            <div class="relative flex flex-col items-center">
+                                <!-- line up -->
+                                <span
+                                    class="absolute top-0 h-6 w-px bg-gray-300"
+                                ></span>
+
+                                <img
+                                    src="/icons/icon-step.svg"
+                                    class="w-20 h-20 z-10 bg-gray-100"
+                                    alt=""
+                                />
+
+                                <!-- line down -->
+                                <span
+                                    class="absolute top-20 h-full w-px bg-gray-300"
+                                ></span>
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                            >
+                                <span class="text-hdtDark font-bold mb-1">
+                                    Bước 2
+                                </span>
+                                <span
+                                    class="text-gray-700 leading-relaxed text-justify"
+                                >
+                                    Gửi hàng về kho Skylane tại quốc gia xuất
+                                    phát
+                                </span>
+                            </div>
+                        </li>
+
+                        <!-- Step 3 -->
+                        <li class="relative flex gap-6">
+                            <div class="relative flex flex-col items-center">
+                                <span
+                                    class="absolute top-0 h-6 w-px bg-gray-300"
+                                ></span>
+
+                                <img
+                                    src="/icons/icon-step.svg"
+                                    class="w-20 h-20 z-10 bg-gray-100"
+                                    alt=""
+                                />
+
+                                <span
+                                    class="absolute top-20 h-full w-px bg-gray-300"
+                                ></span>
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                            >
+                                <span class="text-hdtDark font-bold mb-1">
+                                    Bước 3
+                                </span>
+                                <span
+                                    class="text-gray-700 leading-relaxed text-justify"
+                                >
+                                    Kiểm tra hàng hóa, đóng gói và hoàn thiện
+                                    chứng từ
+                                </span>
+                            </div>
+                        </li>
+
+                        <!-- Step 4 -->
+                        <li class="relative flex gap-6">
+                            <div class="relative flex flex-col items-center">
+                                <span
+                                    class="absolute top-0 h-6 w-px bg-gray-300"
+                                ></span>
+
+                                <img
+                                    src="/icons/icon-step.svg"
+                                    class="w-20 h-20 z-10 bg-gray-100"
+                                    alt=""
+                                />
+
+                                <span
+                                    class="absolute top-20 h-full w-px bg-gray-300"
+                                ></span>
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                            >
+                                <span class="text-hdtDark font-bold mb-1">
+                                    Bước 4
+                                </span>
+                                <span
+                                    class="text-gray-700 leading-relaxed text-justify"
+                                >
+                                    Vận chuyển quốc tế và cung cấp mã vận đơn
+                                    theo dõi
+                                </span>
+                            </div>
+                        </li>
+
+                        <!-- Step 5 -->
+                        <li class="relative flex gap-6">
+                            <div class="relative flex flex-col items-center">
+                                <!-- line up -->
+                                <span
+                                    class="absolute top-0 h-6 w-px bg-gray-300"
+                                ></span>
+
+                                <img
+                                    src="/icons/icon-step.svg"
+                                    class="w-20 h-20 z-10 bg-gray-100"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div
+                                class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                            >
+                                <span class="text-hdtDark font-bold mb-1">
+                                    Bước 5
+                                </span>
+                                <span
+                                    class="text-gray-700 leading-relaxed text-justify"
+                                >
+                                    Thông quan và giao hàng tại Việt Nam
+                                </span>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </section>
+</BaseLayout>

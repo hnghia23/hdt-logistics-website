@@ -1,0 +1,506 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                DỊCH VỤ ORDER VÀ GỬI HÀNG TRUNG QUỐC ĐI QUỐC TẾ TẠI SKYLANE
+                LOGISTICS
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <!-- <p class="text-base md:text-lg leading-relaxed text-white">
+                Skylane cung cấp dịch vụ gửi hàng đi Canada với chi phí cạnh
+                tranh và thời gian vận chuyển linh hoạt
+            </p> -->
+        </div>
+    </section>
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Trong bối cảnh thương mại điện tử xuyên biên giới phát triển
+                    mạnh, nhu cầu order hàng Trung Quốc và vận chuyển đi các thị
+                    trường quốc tế như Mỹ, Úc, Canada, Châu Âu ngày càng tăng.
+                    Trung Quốc vẫn là nguồn cung hàng hóa đa dạng với giá thành
+                    cạnh tranh, tuy nhiên việc tự order và gửi hàng đi quốc tế
+                    thường gặp nhiều khó khăn liên quan đến thanh toán, vận
+                    chuyển và thủ tục hải quan. Skylane Logistics ra đời nhằm
+                    giải quyết trọn vẹn những vấn đề này bằng giải pháp order và
+                    vận chuyển quốc tế đồng bộ.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane hỗ trợ khách hàng order hàng từ các nền tảng thương
+                    mại điện tử Trung Quốc như Taobao, 1688, Tmall theo đúng yêu
+                    cầu về mẫu mã, số lượng và chất lượng. Hàng hóa sau khi
+                    order sẽ được tiếp nhận tại kho Trung Quốc của Skylane để
+                    kiểm tra, phân loại và đóng gói lại phù hợp với tiêu chuẩn
+                    vận chuyển quốc tế. Sau khi hoàn tất khâu order và gom hàng,
+                    Skylane triển khai dịch vụ gửi hàng Trung Quốc đi quốc tế
+                    với nhiều phương án vận chuyển linh hoạt, phù hợp cho cả
+                    hàng cá nhân lẫn hàng kinh doanh.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/public/dich-vu/gui-hang-di-my.png"
+                            alt="Dịch vụ gửi hàng đi Mỹ"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+
+                    <figcaption class="mt-4 text-sm text-gray-500">
+                        Dịch vụ gửi hàng đi Mỹ tại Skylane Logistics
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- ƯU ĐIỂM DỊCH VỤ -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <h2 class="text-3xl font-semibold mb-12 text-center">
+                Lợi ích khi sử dụng dịch vụ
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                >
+                </div>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Tiết kiệm thời gian và công sức
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Skylane xử lý trọn gói từ khâu tư vấn, order, gom hàng
+                        đến vận chuyển quốc tế, giúp khách hàng không phải làm
+                        việc với nhiều bên trung gian hay tự xử lý thủ tục phức
+                        tạp
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/fast-delivery.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+
+                    <h3 class="text-xl font-semibold mb-4">
+                        Tối ưu chi phí vận chuyển
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Thay vì phải order hàng về Việt Nam rồi đóng gói gửi
+                        tiếp sang Mỹ, Úc, Canada, Skylane hỗ trợ order hộ tại
+                        Trung Quốc và vận chuyển thẳng đi quốc tế. Giải pháp này
+                        giúp khách tiết kiệm thời gian, giảm chi phí phát sinh
+                        và hạn chế rủi ro trung chuyển nhiều chặng
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/world-wide.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">
+                        Quy trình rõ ràng, minh bạch
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Mọi thông tin về hàng hóa, chi phí và tiến độ đều được
+                        Skylane tư vấn và cập nhật rõ ràng, giúp khách hàng chủ
+                        động theo dõi và yên tâm trong suốt quá trình sử dụng
+                        dịch vụ
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <img
+                        src="/icons/tracking-track.svg"
+                        alt="Thời gian vận chuyển nhanh"
+                        class="mx-auto w-20 h-20 mb-4"
+                    />
+                    <h3 class="text-xl font-semibold mb-4">
+                        Theo dõi minh bạch – hỗ trợ xuyên suốt
+                    </h3>
+                    <p class="font-semibold text-md">
+                        Từ lúc order – đóng gói – xuất kho – bay – giao tận tay
+                        người nhận, khách luôn được cập nhật tình trạng đơn hàng
+                        rõ ràng. Đội ngũ Skylane đồng hành xuyên suốt, xử lý
+                        nhanh các tình huống phát sinh
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUY TRÌNH -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 max-w-6xl mx-auto">
+            <h2 class="text-3xl font-semibold mb-6 text-center">
+                Quy trình order hàng Trung Quốc tại Skylane Logistics
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb mx-auto"
+                >
+                </div>
+            </h2>
+
+            <!-- <div class="mb-12 text-center font-semibold text-md">
+                Quy trình gửi hàng tại Skylane Logistics được thiết kế tối ưu,
+                nhằm đảm bảo sự thuận tiện và an tâm cho khách hàng
+            </div> -->
+
+            <!-- GRID: image | steps -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- LEFT IMAGE -->
+                <div class="hidden lg:block">
+                    <img
+                        src="/images/process-shipping.png"
+                        alt="Shipping process"
+                        class="w-full max-w-md mx-auto"
+                    />
+                </div>
+
+                <!-- STEPS -->
+                <ol class="relative space-y-4">
+                    <!-- Step 1 -->
+                    <li class="relative flex gap-6">
+                        <!-- timeline -->
+                        <div class="relative flex flex-col items-center">
+                            <!-- icon -->
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 bg-gray-100"
+                                alt=""
+                            />
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <!-- content -->
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 1: Gửi link sản phẩm cần order
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Khách hàng gửi link sản phẩm từ Taobao, 1688,
+                                Tmall… kèm số lượng, màu sắc, size và yêu cầu cụ
+                                thể. Skylane tiếp nhận thông tin và kiểm tra sơ
+                                bộ mặt hàng
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 2 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <!-- line down -->
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 2: Tư vấn & báo giá chi tiết
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Skylane tư vấn phương án mua hàng phù hợp, báo
+                                giá rõ ràng gồm: giá sản phẩm, phí mua hộ, phí
+                                vận chuyển & các chi phí liên quan. Khách hàng
+                                xác nhận trước khi tiến hành order.
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 3 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 3: Đặt hàng với nhà cung cấp Trung Quốc
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Sau khi khách hàng đồng ý, Skylane tiến hành đặt
+                                hàng, làm việc trực tiếp với shop/xưởng Trung
+                                Quốc, theo dõi quá trình xử lý đơn và cập nhật
+                                liên tục
+                            </span>
+                        </div>
+                    </li>
+
+                    <!-- Step 4 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 4: Nhận hàng tại kho Trung Quốc
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Hàng hóa được tập kết tại kho Trung Quốc của
+                                Skylane, kiểm tra số lượng, tình trạng bên ngoài
+                                và phân loại theo yêu cầu
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Step 5 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+
+                            <span
+                                class="absolute top-20 h-full w-px bg-gray-300"
+                            ></span>
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 5: Vận chuyển đi quốc tế
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Từ kho Trung Quốc, Skylane sắp xếp tuyến vận
+                                chuyển phù hợp đi Mỹ, Úc, Canada, châu Âu… theo
+                                yêu cầu của khách
+                            </span>
+                        </div>
+                    </li>
+                    <!-- Step 6 -->
+                    <li class="relative flex gap-6">
+                        <div class="relative flex flex-col items-center">
+                            <!-- line up -->
+                            <span class="absolute top-0 h-6 w-px bg-gray-300"
+                            ></span>
+
+                            <img
+                                src="/icons/icon-step.svg"
+                                class="w-20 h-20 z-10 bg-gray-100"
+                                alt=""
+                            />
+                        </div>
+
+                        <div
+                            class="flex flex-col flex-1 bg-white p-5 rounded-lg shadow-sm justify-center"
+                        >
+                            <span class="text-hdtDark font-bold mb-1">
+                                Bước 6: Giao hàng & hỗ trợ sau vận chuyển
+                            </span>
+                            <span
+                                class="text-gray-700 leading-relaxed text-justify"
+                            >
+                                Skylane xác nhận hoàn tất đơn hàng và hỗ trợ xử
+                                lý các vấn đề phát sinh (nếu có)
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cách tính cân nặng tính cước-->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <!-- Nội dung bên trái -->
+                <div>
+                    <h2 class="text-3xl font-semibold mb-8">
+                        Cách tính cân nặng tính cước
+                        <div
+                            class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue"
+                        >
+                        </div>
+                    </h2>
+
+                    <p class="leading-relaxed text-gray-600">
+                        Theo quy định chung của các hãng hàng không quốc tế,
+                        cước phí vận chuyển được áp dụng dựa trên trọng lượng
+                        tính cước (Chargeable Weight), là giá trị lớn hơn giữa
+                        cân nặng thực tế và cân nặng quy đổi của kiện hàng.
+                    </p>
+
+                    <ul class="mx-8 space-y-3 pt-1 text-gray-700 mt-4">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                <strong>Cân nặng thực tế </strong>là trọng lượng
+                                hàng hóa được cân trực tiếp sau khi đóng gói,
+                                tính bằng kilogram.
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                <strong>Cân nặng quy đổi </strong> (cân thể tích)
+                                được áp dụng đối với các kiện hàng có kích thước lớn
+                                nhưng trọng lượng nhẹ. Công thức tính như sau:
+                            </span>
+                        </li>
+                    </ul>
+                    <span class="mx-20 leading-relaxed mt-2 block">
+                        Cân nặng quy đổi (kg) = (Dài x Rộng x Cao) / 5000</span
+                    >
+                    <span class="mx-28 leading-relaxed mt-2 block">
+                        (Kích thước được tính bằng centimet)</span
+                    >
+
+                    <p class="leading-relaxed text-gray-600 mt-4">
+                        Sau khi tính toán, Skylane sẽ so sánh cân nặng thực tế
+                        và cân nặng quy đổi, mức cước vận chuyển sẽ được áp dụng
+                        theo mức cân cao hơn trong hai giá trị này.
+                    </p>
+                    <p class="leading-relaxed text-gray-600 mt-4">
+                        Ví dụ, một kiện hàng có kích thước lớn nhưng nhẹ về khối
+                        lượng sẽ được tính cước theo cân thể tích. Ngược lại,
+                        nếu hàng hóa nặng nhưng kích thước nhỏ gọn, cước phí sẽ
+                        được tính theo cân nặng thực tế.
+                    </p>
+                </div>
+                <!-- Hình ảnh bên phải -->
+                <div class="flex justify-center lg:justify-end">
+                    <img
+                        src="/public/doi-tac-van-chuyen.png"
+                        alt="Đối tác vận chuyển Skylane Logistics"
+                        class="w-full max-w-md rounded-xl shadow-md object-contain"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid text-center">
+            <h2 class="text-3xl font-semibold mb-8">
+                KẾT LUẬN
+                <div
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mx-auto"
+                >
+                </div>
+            </h2>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Skylane Logistics cam kết mang đến dịch vụ Order và gửi hàng từ
+                Trung Quốc nhanh chóng, an toàn và tiết kiệm chi phí. Hãy liên
+                hệ ngay với chúng tôi để nhận được tư vấn chi tiết và những ưu
+                đãi hấp dẫn. Đội ngũ nhân viên của Skylane Logistics luôn sẵn
+                sàng hỗ trợ bạn mọi lúc, mọi nơi
+            </p>
+
+            <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                Liên hệ ngay với Skylane Logistics để được tư vấn và báo giá
+            </p>
+        </div>
+
+        <div class="bg-gray rounded-xl p-6">
+            <ContactForm />
+        </div>
+    </section>
+</BaseLayout>

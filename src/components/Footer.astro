@@ -1,29 +1,130 @@
----
-
----
-
 <footer class="bg-hdtDark text-white">
-    <div class="container-max px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div>
-            <h3 class="font-semibold">HDT Logistics</h3>
-            <p class="text-sm">
-                Giải pháp vận tải & kho bãi. Liên hệ: info@hdt-logistics.vn
+    <!-- Main footer -->
+    <div
+         class="container-max px-8 pt-16 pb-12
+             grid grid-cols-1 lg:grid-cols-[1.2fr_auto_3fr] gap-12"
+    >
+        <!-- LEFT: Logo + intro -->
+        <div class="space-y-5">
+            <!-- Logo -->
+            <img
+                src="/logo.png"
+                alt="Skylane Logistics"
+                class="h-12 w-auto rounded-xl"
+            />
+
+            <p class="text-sm leading-relaxed max-w-xs">
+                Skylane Logistics cung cấp giải pháp vận chuyển quốc tế,
+                kho bãi và dịch vụ logistics toàn diện,
+                tối ưu chi phí và thời gian cho doanh nghiệp.
             </p>
         </div>
-        <div>
-            <h4 class="font-semibold">Dịch vụ</h4>
-            <ul class="text-sm space-y-2">
-                <li>Vận chuyển đường bộ</li>
-                <li>Vận chuyển đường biển</li>
-                <li>Kho bãi & 3PL</li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="font-semibold">Địa chỉ</h4>
-            <p class="text-sm">Hà Nội, Việt Nam</p>
+
+        <!-- VERTICAL DIVIDER -->
+        <div class="hidden lg:block w-px bg-white/80"></div>
+
+        <!-- RIGHT: Content columns -->
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+        >
+            <!-- Company info -->
+            <div class="space-y-4">
+                <h4 class="text-white text-base font-semibold mb-3">
+                    Skylane Logistics 
+                </h4>
+
+                <p class="text-sm leading-relaxed">
+                    Trụ sở chính:<br />
+                    1E ngõ 75 Hồ Tùng Mậu, Mai Dịch,<br />
+                    Cầu Giấy, Hà Nội
+                </p>
+
+                <p class="text-sm mt-2">
+                    Email:
+                    <a
+                        href="mailto:skylanelogisticsllc@gmail.com"
+                        class="text-white underline-offset-2 hover:underline"
+                    >
+                        skylanelogisticsllc@gmail.com
+                    </a>
+                </p>
+
+                <p class="text-sm mt-2">
+                    Hotline:
+                    <a
+                        href="tel:0941038126"
+                        class="text-white font-medium underline-offset-2 hover:underline"
+                    >
+                        0941 038 126
+                    </a>
+                </p>
+            </div>
+
+            <!-- About -->
+            <div>
+                <h4 class="text-white text-base font-semibold mb-4">
+                    Về chúng tôi
+                </h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="/about" class="text-white">Giới thiệu</a></li>
+                    <li><a href="/services" class="text-white">Dịch vụ</a></li>
+                    <li><a href="/news" class="text-white">Tin tức</a></li>
+                    <li><a href="/contact" class="text-white">Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <!-- Partners -->
+            <div>
+                <h4 class="text-white text-base font-semibold mb-4">
+                    Đối tác
+                </h4>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a
+                            href="https://www.dhl.com/vn-vi/home/chuyen-phat-nhanh.html"
+                            target="_blank"
+                            class="text-white"
+                        >
+                            DHL
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.fedex.com/vi-vn/home.html"
+                            target="_blank"
+                            class="text-white"
+                        >
+                            FedEx
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.ups.com/vn/vi/home"
+                            target="_blank"
+                            class="text-white"
+                        >
+                            UPS
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://dpex.com/"
+                            target="_blank"
+                            class="text-white"
+                        >
+                            DPEX
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="bg-[color:var(--hdt-dark)]/90 text-xs text-center py-3">
-        © 2025 HDT Logistics. All rights reserved.
+
+    <!-- Bottom bar -->
+    <div
+        class="border-t border-white/20
+               text-xs text-center py-3"
+    >
+        © 2025 Skylane Logistics. All rights reserved.
     </div>
 </footer>

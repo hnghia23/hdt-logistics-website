@@ -2,26 +2,66 @@
 
 ---
 
-<section class="bg-gradient-to-r from-hdtDark to-hdtGreen text-white">
-    <div class="container-max px-4 py-20">
+<section class="relative bg-[url('/banner.jpg')] bg-cover bg-center text-white">
+    <!-- Overlay để làm mờ ảnh -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <div class="relative container-max px-4 py-20">
         <div class="max-w-2xl">
-            <h1 class="text-4xl font-bold mb-4">
-                Giải pháp logistics toàn diện cho doanh nghiệp
+            <h1 class="text-4xl text-white font-bold mb-4">
+                SKYLANE LOGISTICS - DỊCH VỤ CHUYỂN PHÁT NHANH QUỐC TẾ
             </h1>
             <p class="mb-6">
-                Vận chuyển nhanh, an toàn và theo dõi trực tuyến — chúng tôi hỗ
-                trợ chuỗi cung ứng từ đầu đến cuối.
+                ORDER HÀNG TRUNG QUỐC, HOA KỲ, CANADA, FFM CANADA - AUSTRALIA
             </p>
             <div class="flex gap-4">
+                <!-- Liên hệ ngay -->
                 <a
                     href="/contact"
-                    class="bg-white text-hdtDark px-5 py-3 rounded font-semibold"
-                    >Liên hệ ngay</a
+                    class="group inline-flex rounded-lg
+               bg-gradient-to-br
+               from-hdtBlue via-blue-500 to-cyan-400
+               shadow-[0_15px_30px_-5px_rgba(59,130,246,0.25)]
+               transition-all duration-300
+               active:scale-90"
                 >
+                    <span
+                        class="inline-flex items-center justify-center
+                   w-full h-full
+                   px-5 py-3
+                   bg-[#f3f7fe] text-hdtDark
+                   rounded-md font-semibold
+                   transition-all duration-300
+                   group-hover:bg-transparent
+                   group-hover:text-white"
+                    >
+                        Liên hệ ngay
+                    </span>
+                </a>
+
+                <!-- Xem dịch vụ -->
                 <a
                     href="/services"
-                    class="border border-white px-5 py-3 rounded hover:bg-white/10">Xem dịch vụ</a
+                    class="group inline-flex rounded-lg
+               bg-gradient-to-br
+               from-hdtBlue via-blue-500 to-cyan-400
+               shadow-[0_15px_30px_-5px_rgba(59,130,246,0.25)]
+               transition-all duration-300
+               active:scale-90"
                 >
+                    <span
+                        class="inline-flex items-center justify-center
+                   w-full h-full
+                   px-5 py-3
+                   bg-[#f3f7fe] text-hdtDark
+                   rounded-md font-semibold
+                   transition-all duration-300
+                   group-hover:bg-transparent
+                   group-hover:text-white"
+                    >
+                        Xem dịch vụ
+                    </span>
+                </a>
             </div>
         </div>
     </div>
