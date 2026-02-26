@@ -3,11 +3,11 @@ const { title, description, image, href } = Astro.props;
 ---
 
 <div class="bg-white rounded-xl shadow-sm group">
-    <div class="h-40 bg-gray-100 flex items-center justify-center">
+    <div class="h-40 bg-gray-100 flex items-start justify-center">
         <img
             src={image}
             alt={title}
-            class="w-full h-full object-cover transition-transform duration-300"
+            class="w-full h-full object-top transition-transform duration-300"
         />
     </div>
 
