@@ -1,0 +1,536 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ContactForm from "../../components/ContactForm.astro";
+---
+
+<BaseLayout>
+    <!-- HERO -->
+    <section
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+    >
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <!-- Content -->
+        <div
+            class="relative z-10 container-max px-4 text-center max-w-4xl mx-auto"
+        >
+            <h1
+                class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-tight text-white"
+            >
+                FULFILLMENT ĐỨC
+            </h1>
+
+            <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
+
+            <p class="text-base md:text-lg leading-relaxed text-white/90">
+                Giải pháp lưu kho – xử lý đơn – giao hàng nội địa Đức trọn gói
+                cho nhà bán hàng quốc tế
+            </p>
+        </div>
+    </section>
+    <!-- GIỚI THIỆU -->
+    <section class="bg-gray-100 py-12">
+        <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div class="space-y-4 leading-relaxed">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Về Skylane Logistics
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+
+                <p class="mx-8 text-base leading-relaxed">
+                    Bán hàng vào thị trường Đức sẽ đơn giản và hiệu quả hơn rất
+                    nhiều khi bạn không phải tự lo kho bãi, đóng gói hay xử lý
+                    từng đơn hàng.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Với dịch vụ Fulfillment Đức của Skylane Logistics, hàng hóa
+                    được lưu kho trực tiếp tại Đức, xử lý đơn nhanh chóng và
+                    giao đến tay khách chỉ trong vài ngày.
+                </p>
+                <p class="mx-8 text-base leading-relaxed">
+                    Skylane giúp bạn rút ngắn thời gian giao hàng, tối ưu chi
+                    phí logistics và tập trung hoàn toàn vào phát triển kinh
+                    doanh.
+                </p>
+            </div>
+
+            <div class="rounded-xl p-6 flex justify-center">
+                <figure class="text-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/images/fulfillment.png"
+                            class="w-full max-w-lg mx-auto object-contain"
+                        />
+                    </div>
+                </figure>
+            </div>
+        </div>
+
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Fulfillment Đức là gì?
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+            </div>
+            <div
+                class="container-max px-4 grid md:grid-cols-2 gap-8 items-center"
+            >
+                <div class="rounded-xl p-6 flex justify-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/images/fulfillment-la-gi.png"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+                </div>
+                <div class="space-y-4 leading-relaxed">
+                    <p class="mx-8 text-base leading-relaxed">
+                        Fulfillment Đức là dịch vụ hoàn tất đơn hàng trọn gói
+                        dành cho các doanh nghiệp bán hàng online tại thị trường
+                        Đức, bao gồm toàn bộ các khâu: nhận hàng, lưu kho, xử lý
+                        đơn, đóng gói và giao hàng đến tay khách.
+                    </p>
+                    <p class="mx-8 text-base leading-relaxed">
+                        Dịch vụ này đặc biệt phù hợp với các nhà bán hàng kinh
+                        doanh trên Amazon, Shopify, TikTok Shop hoặc website
+                        riêng tại Đức, giúp bạn:
+                    </p>
+                    <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Rút ngắn thời gian giao hàng nội địa
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Giảm chi phí vận hành và nhân sự
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Nâng cao trải nghiệm khách hàng
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Tối ưu quy trình quản lý đơn hàng xuyên biên
+                                giới
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p class="mx-8 text-base leading-relaxed">
+                        Mọi hoạt động đều được quản lý tập trung, minh bạch và
+                        tối ưu chi phí cho người bán.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Dịch vụ Fulfillment Đức tại Skylane bao gồm những gì?
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+            </div>
+            <div
+                class="container-max px-4 grid md:grid-cols-2 gap-8 items-center"
+            >
+                <div class="space-y-4 leading-relaxed">
+                    <p class="mx-8 text-base leading-relaxed">
+                        Fulfillment Đức là dịch vụ lưu kho và xử lý đơn hàng tại
+                        Đức, trong đó Skylane thay bạn thực hiện toàn bộ các
+                        khâu:
+                    </p>
+
+                    <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Nhận hàng từ Việt Nam / Trung Quốc vận chuyển
+                                sang Đức
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Lưu kho ngắn hạn và dài hạn tại kho Đức
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Pick & Pack theo từng đơn hàng</span
+                            >
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Đóng gói theo tiêu chuẩn nội địa Đức & EU</span
+                            >
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >In nhãn, dán label, xử lý đơn</span
+                            >
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Giao hàng nội địa Đức</span
+                            >
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Hỗ trợ hoàn hàng (return), đổi trả khi phát
+                                sinh</span
+                            >
+                        </li>
+                    </ul>
+
+                    <p class="mx-8 text-base leading-relaxed">
+                        Toàn bộ quy trình được vận hành chuyên nghiệp, minh bạch
+                        và tối ưu chi phí, giúp nhà bán hàng yên tâm mở rộng thị
+                        trường Đức.
+                    </p>
+                </div>
+
+                <div class="rounded-xl p-6 flex justify-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/images/fulfillment-bao-gom.webp"
+                            class="w-full max-w-2xl mx-auto object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-12">
+            <div class="container-max px-4">
+                <h2 class="text-3xl font-semibold mb-6 leading-tight">
+                    Hỗ trợ cho thuê cổng thanh toán khi sử dụng Fulfillment Đức
+                    <div
+                        class="mt-2 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    >
+                    </div>
+                </h2>
+            </div>
+            <div
+                class="container-max px-4 grid md:grid-cols-2 gap-8 items-center"
+            >
+                <div class="space-y-4 leading-relaxed">
+                    <p class="mx-8 text-base leading-relaxed">
+                        Bên cạnh dịch vụ Fulfillment Đức, Skylane còn hỗ trợ cho
+                        thuê cổng thanh toán, giúp nhà bán hàng hoàn thiện toàn
+                        bộ chuỗi vận hành khi kinh doanh tại thị trường Đức.
+                    </p>
+                    <p class="mx-8 text-base leading-relaxed">
+                        Thực tế, nhiều nhà bán hàng gặp khó khăn trong việc:
+                    </p>
+
+                    <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Mở tài khoản ngân hàng tại Đức
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Đăng ký cổng thanh toán quốc tế
+                            </span>
+                        </li>
+
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Nhận tiền từ khách hàng bản địa khi chưa có
+                                pháp nhân tại EU</span
+                            >
+                        </li>
+                    </ul>
+
+                    <p class="mx-8 text-base leading-relaxed">
+                        Việc tích hợp cổng thanh toán trong gói Fulfillment Đức
+                        giúp nhà bán hàng nhận thanh toán thuận tiện hơn, giảm
+                        rào cản khi tiếp cận thị trường Đức và Liên minh châu
+                        Âu.
+                    </p>
+
+                    <p class="mx-8 text-base leading-relaxed">
+                        Skylane thực hiện đối soát hàng hóa và đơn hàng định kỳ
+                        hàng tuần, giúp bạn nắm rõ:
+                    </p>
+                    <ul class="mx-14 space-y-3 pt-1 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Tình trạng tồn kho
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Số lượng đơn đã xử lý
+                            </span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Doanh thu và các phát sinh nếu có
+                            </span>
+                        </li>
+                    </ul>
+
+                    <p class="mx-8 text-base leading-relaxed">
+                        Việc đối soát thường xuyên giúp chủ động dòng tiền và
+                        kiểm soát hoạt động kinh doanh hiệu quả.
+                    </p>
+                </div>
+                <div class="rounded-xl p-6 flex justify-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/images/ho-tro-thanh-toan.png"
+                            class="w-full max-w-2xl object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- ƯU ĐIỂM DỊCH VỤ -->
+            <section class="bg-gray-100 py-12">
+                <div class="container-max px-4">
+                    <h2 class="text-3xl font-semibold mb-12 text-center">
+                        Vì sao nên sử dụng dịch vụ Fulfillment Đức của Skylane?
+                        <div
+                            class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6 mx-auto"
+                        >
+                        </div>
+                    </h2>
+
+                    <div class="grid md:grid-cols-2 gap-6 text-center">
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <img
+                                src="/icons/fast-delivery.svg"
+                                alt="Thời gian vận chuyển nhanh"
+                                class="mx-auto w-20 h-20 mb-4"
+                            />
+
+                            <h3 class="text-xl font-semibold mb-4">
+                                Giao hàng nội địa Đức nhanh chóng
+                            </h3>
+                            <p class="font-semibold text-md">
+                                Hàng hóa được lưu kho sẵn tại Đức giúp đơn hàng
+                                được xử lý và giao nhanh hơn rất nhiều so với
+                                việc gửi từng đơn nhỏ từ Việt Nam hoặc Trung
+                                Quốc. Thời gian giao hàng rút ngắn giúp tăng tỷ
+                                lệ hài lòng và tỷ lệ mua lại của khách hàng.
+                            </p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <img
+                                src="/icons/money-bag.svg"
+                                alt="Thời gian vận chuyển nhanh"
+                                class="mx-auto w-20 h-20 mb-4"
+                            />
+
+                            <h3 class="text-xl font-semibold mb-4">
+                                Tối ưu chi phí logistics
+                            </h3>
+                            <p class="font-semibold text-md">
+                                Thay vì phải tự thuê kho, thuê nhân sự và xử lý
+                                vận hành phức tạp, Skylane Logistics cung cấp
+                                dịch vụ fulfillment trọn gói, giúp bạn:
+                            </p>
+                            <ul
+                                class="mx-28 items-center mt-2 space-y-2 text-md font-semibold"
+                            >
+                                <li class="flex items-start gap-3">
+                                    <img
+                                        src="/icons/approval.svg"
+                                        class="w-5 h-5 mt-1 shrink-0"
+                                    />
+                                    <span class="leading-relaxed">
+                                        Giảm chi phí cố định
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <img
+                                        src="/icons/approval.svg"
+                                        class="w-5 h-5 mt-1 shrink-0"
+                                    />
+                                    <span class="leading-relaxed">
+                                        Trả phí theo số lượng đơn thực tế
+                                    </span>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <img
+                                        src="/icons/approval.svg"
+                                        class="w-5 h-5 mt-1 shrink-0"
+                                    />
+                                    <span class="leading-relaxed"
+                                        >Hạn chế tối đa chi phí phát sinh</span
+                                    >
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <img
+                                        src="/icons/approval.svg"
+                                        class="w-5 h-5 mt-1 shrink-0"
+                                    />
+                                    <span class="leading-relaxed"
+                                        >Không cần đầu tư cơ sở hạ tầng
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <img
+                                src="/icons/warehouse.svg"
+                                alt="Thời gian vận chuyển nhanh"
+                                class="mx-auto w-20 h-20 mb-4"
+                            />
+                            <h3 class="text-xl font-semibold mb-4">
+                                Quản lý tồn kho rõ ràng, minh bạch
+                            </h3>
+                            <p class="font-semibold text-md">
+                                Skylane hỗ trợ kiểm soát tồn kho chặt chẽ, cập
+                                nhật số lượng hàng hóa thường xuyên, giúp nhà
+                                bán hàng chủ động kế hoạch bán hàng và nhập hàng
+                            </p>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow">
+                            <img
+                                src="/icons/doi-soat.svg"
+                                alt="Thời gian vận chuyển nhanh"
+                                class="mx-auto w-20 h-20 mb-4"
+                            />
+                            <h3 class="text-xl font-semibold mb-4">
+                                Đối soát minh bạch theo tuần
+                            </h3>
+                            <p class="font-semibold text-md">
+                                Toàn bộ đơn hàng, tồn kho và doanh thu được đối
+                                soát định kỳ hàng tuần, giúp nhà bán hàng dễ
+                                dàng kiểm soát tình hình kinh doanh, hạn chế rủi
+                                ro và kịp thời điều chỉnh kế hoạch bán hàng
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- KẾT LUẬN -->
+            <section class="bg-gray-100 py-12">
+                <div class="container-max px-4 grid text-center">
+                    <h2 class="text-3xl font-semibold mb-8">
+                        KẾT LUẬN
+                        <div
+                            class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mx-auto"
+                        >
+                        </div>
+                    </h2>
+
+                    <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                        Fulfillment Đức (FFM Đức) tại Skylane là giải pháp tối ưu
+                        giúp nhà bán hàng lưu kho tại Đức, xử lý đơn nhanh, giao
+                        hàng nội địa hiệu quả và chủ động dòng tiền thông qua
+                        đối soát doanh thu, hỗ trợ chuyển tiền định kỳ. Với dịch
+                        vụ trọn gói, quy trình minh bạch và hỗ trợ linh hoạt,
+                        Skylane giúp bạn bán hàng tại Đức dễ dàng và bền vững hơn
+                    </p>
+
+                    <p class="font-semibold text-gray-900 leading-relaxed mb-6">
+                        Liên hệ Skylane để được tư vấn chi tiết về dịch vụ
+                        Fulfillment Đức phù hợp với mô hình kinh doanh của bạn
+                    </p>
+                </div>
+
+                <div class="bg-gray rounded-xl p-6">
+                    <ContactForm />
+                </div>
+            </section>
+        </section>
+    </section>
+</BaseLayout>

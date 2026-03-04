@@ -88,13 +88,8 @@ import ContactForm from "../../components/ContactForm.astro";
                 </ul>
             </div>
 
-            <div class="rounded-xl p-6 flex justify-center">
-                    <div class="hidden lg:flex justify-center">
-                        <img
-                            src="/images/ve-skylane-my-vn.png"
-                            class="w-full max-w-2xl object-contain"
-                        />
-                    </div>
+            <div class="bg-white shadow rounded-xl p-6">
+                <ContactForm />
             </div>
         </div>
     </section>
@@ -111,13 +106,13 @@ import ContactForm from "../../components/ContactForm.astro";
         </div>
         <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
             <div class="rounded-xl p-6 flex justify-center">
-                    <div class="hidden lg:flex justify-center">
-                        <img
-                            src="/images/kho-bai-my-vn.jpg"
-                            alt="Dịch vụ gửi hàng đi Mỹ"
-                            class="w-full max-w-2xl object-contain"
-                        />
-                    </div>
+                <div class="hidden lg:flex justify-center">
+                    <img
+                        src="/images/kho-bai-my-vn.jpg"
+                        alt="Dịch vụ gửi hàng đi Mỹ"
+                        class="w-full max-w-2xl object-contain"
+                    />
+                </div>
             </div>
             <div class="space-y-4 leading-relaxed">
                 <p class="mx-8 text-base leading-relaxed">
@@ -285,12 +280,12 @@ import ContactForm from "../../components/ContactForm.astro";
                 </p>
             </div>
             <div class="rounded-xl p-6 flex justify-center">
-                    <div class="hidden lg:flex justify-center">
-                        <img
-                            src="/images/bao-hiem.png"
-                            class="w-full max-w-md mx-auto object-contain"
-                        />
-                    </div>
+                <div class="hidden lg:flex justify-center">
+                    <img
+                        src="/images/bao-hiem.png"
+                        class="w-full max-w-md mx-auto object-contain"
+                    />
+                </div>
             </div>
         </div>
     </section>
@@ -298,70 +293,87 @@ import ContactForm from "../../components/ContactForm.astro";
     <!-- Lưu ý khi gửi hàng quốc tế -->
     <section class="bg-gray-100 py-12">
         <div class="container-max px-4">
-            <h2 class="text-3xl font-semibold mb-12">
+            <h2 class="text-3xl font-semibold">
                 Lưu ý khi gửi hàng quốc tế
+
+            </h2>
                 <div
-                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue mb-6"
+                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue"
                 >
                 </div>
-            </h2>
+            <div
+                class="container-max px-4 grid md:grid-cols-2 gap-8 items-center"
+            >
+                <div class="space-y-4 leading-relaxed">
+                    <div class="mb-4">
+                        Để quá trình vận chuyển diễn ra thuận lợi, khách hàng
+                        cần lưu ý một số điểm sau:
+                    </div>
 
-            <div class="mb-4">
-                Để quá trình vận chuyển diễn ra thuận lợi, khách hàng cần lưu ý
-                một số điểm sau:
-            </div>
+                    <ul class="mx-8 space-y-3 pt-1 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Khai báo <strong
+                                    >đúng tên hàng, số lượng, giá trị</strong
+                                >
+                            </span>
+                        </li>
 
-            <ul class="mx-8 space-y-3 pt-1 text-gray-700">
-                <li class="flex items-start gap-3">
-                    <img
-                        src="/icons/approval.svg"
-                        class="w-5 h-5 mt-1 shrink-0"
-                    />
-                    <span class="leading-relaxed">
-                        Khai báo <strong
-                            >đúng tên hàng, số lượng, giá trị</strong
-                        >
-                    </span>
-                </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed">
+                                Không gửi hàng cấm, hàng vi phạm sở hữu trí tuệ
+                                theo quy định
+                            </span>
+                        </li>
 
-                <li class="flex items-start gap-3">
-                    <img
-                        src="/icons/approval.svg"
-                        class="w-5 h-5 mt-1 shrink-0"
-                    />
-                    <span class="leading-relaxed">
-                        Không gửi hàng cấm, hàng vi phạm sở hữu trí tuệ theo quy
-                        định
-                    </span>
-                </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Một số mặt hàng có thể bị <strong
+                                    >đánh thuế nhập khẩu hoặc kiểm tra chuyên
+                                    ngành</strong
+                                > khi về Việt Nam</span
+                            >
+                        </li>
 
-                <li class="flex items-start gap-3">
-                    <img
-                        src="/icons/approval.svg"
-                        class="w-5 h-5 mt-1 shrink-0"
-                    />
-                    <span class="leading-relaxed"
-                        >Một số mặt hàng có thể bị <strong
-                            >đánh thuế nhập khẩu hoặc kiểm tra chuyên ngành</strong
-                        > khi về Việt Nam</span
-                    >
-                </li>
+                        <li class="flex items-start gap-3">
+                            <img
+                                src="/icons/approval.svg"
+                                class="w-5 h-5 mt-1 shrink-0"
+                            />
+                            <span class="leading-relaxed"
+                                >Thời gian vận chuyển có thể thay đổi tùy tình
+                                trạng thông quan, thời tiết hoặc chính sách hải
+                                quan
+                            </span>
+                        </li>
+                    </ul>
 
-                <li class="flex items-start gap-3">
-                    <img
-                        src="/icons/approval.svg"
-                        class="w-5 h-5 mt-1 shrink-0"
-                    />
-                    <span class="leading-relaxed"
-                        >Thời gian vận chuyển có thể thay đổi tùy tình trạng
-                        thông quan, thời tiết hoặc chính sách hải quan
-                    </span>
-                </li>
-            </ul>
-
-            <div class="mt-6 mb-4">
-                Đội ngũ Skylane luôn <strong>tư vấn trước khi gửi</strong> để hạn
-                chế tối đa rủi ro cho khách hàng.
+                    <div class="mt-6 mb-4">
+                        Đội ngũ Skylane luôn <strong
+                            >tư vấn trước khi gửi</strong
+                        > để hạn chế tối đa rủi ro cho khách hàng.
+                    </div>
+                </div>
+                <div class="rounded-xl p-6 flex justify-center">
+                    <div class="hidden lg:flex justify-center">
+                        <img
+                            src="/images/luu-y-gui-hang-qte.png"
+                            class="w-full max-w-md mx-auto object-contain"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -557,7 +569,7 @@ import ContactForm from "../../components/ContactForm.astro";
             <div class="mt-12 mb-12 text-center text-md">
                 Toàn bộ quá trình đều được<strong>
                     theo dõi và hỗ trợ xuyên suốt</strong
-                > bởi đội ngũ Skylane.
+                > bởi đội ngũ Skylane
             </div>
         </div>
     </section>
