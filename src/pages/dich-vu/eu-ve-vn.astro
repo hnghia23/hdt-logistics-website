@@ -6,7 +6,7 @@ import ContactForm from "../../components/ContactForm.astro";
 <BaseLayout>
     <!-- HERO -->
     <section
-        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white hero-mobile-h"
     >
         <!-- Overlay -->
         <div class="absolute inset-0 bg-black/40"></div>
@@ -106,13 +106,13 @@ import ContactForm from "../../components/ContactForm.astro";
         </div>
         <div class="container-max px-4 grid md:grid-cols-2 gap-8 items-center">
             <div class="rounded-xl p-6 flex justify-center">
-                    <div class="hidden lg:flex justify-center">
-                        <img
-                            src="/images/kho-bai-eu-vn.png"
-                            alt="Dịch vụ gửi hàng từ EU về Việt Nam"
-                            class="w-full max-w-2xl object-contain"
-                        />
-                    </div>
+                <div class="hidden lg:flex justify-center">
+                    <img
+                        src="/images/kho-bai-eu-vn.png"
+                        alt="Dịch vụ gửi hàng từ EU về Việt Nam"
+                        class="w-full max-w-2xl object-contain"
+                    />
+                </div>
             </div>
             <div class="space-y-4 leading-relaxed">
                 <p class="mx-8 text-base leading-relaxed">
@@ -307,12 +307,12 @@ import ContactForm from "../../components/ContactForm.astro";
                 </p>
             </div>
             <div class="rounded-xl p-6 flex justify-center">
-                    <div class="hidden lg:flex justify-center">
-                        <img
-                            src="/images/bao-hiem.png"
-                            class="w-full max-w-2xl object-contain"
-                        />
-                    </div>
+                <div class="hidden lg:flex justify-center">
+                    <img
+                        src="/images/bao-hiem.png"
+                        class="w-full max-w-2xl object-contain"
+                    />
+                </div>
             </div>
         </div>
     </section>
@@ -320,21 +320,18 @@ import ContactForm from "../../components/ContactForm.astro";
     <!-- Lưu ý khi gửi hàng quốc tế -->
     <section class="bg-gray-100 py-12">
         <div class="container-max px-4">
-            <h2 class="text-3xl font-semibold">
-                Lưu ý khi gửi hàng quốc tế
-
-            </h2>
-                <div
-                    class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue"
-                >
-                </div>
+            <h2 class="text-3xl font-semibold">Lưu ý khi gửi hàng quốc tế</h2>
+            <div
+                class="mt-4 h-0.5 w-24 bg-gradient-to-r from-hdtDark to-hdtBlue"
+            >
+            </div>
             <div
                 class="container-max px-4 grid md:grid-cols-2 gap-8 items-center"
             >
                 <div class="space-y-4 leading-relaxed">
                     <div class="mb-4">
-                        Để quá trình vận chuyển từ EU về Việt Nam diễn ra thuận lợi, khách hàng
-                        cần lưu ý một số điểm sau:
+                        Để quá trình vận chuyển từ EU về Việt Nam diễn ra thuận
+                        lợi, khách hàng cần lưu ý một số điểm sau:
                     </div>
 
                     <ul class="mx-8 space-y-3 pt-1 text-gray-700">
@@ -494,7 +491,8 @@ import ContactForm from "../../components/ContactForm.astro";
                             <span
                                 class="text-gray-700 leading-relaxed text-justify"
                             >
-                                Skylane cung cấp địa chỉ kho/điểm nhận hàng tại EU để khách gửi hàng
+                                Skylane cung cấp địa chỉ kho/điểm nhận hàng tại
+                                EU để khách gửi hàng
                             </span>
                         </div>
                     </li>

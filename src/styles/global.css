@@ -84,3 +84,24 @@ body {
         color: var(--hdt-muted);
     }
 }
+
+@media (max-width: 767px) {
+    /* Tăng chiều cao Hero section cho mobile */
+    .hero-mobile-h {
+        min-height: 340px !important;
+        height: auto !important;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .container-max, .max-w-2xl, .max-w-4xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    h1, .text-4xl, .text-3xl {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+    .mb-4, .mb-6, .mb-8, .mb-12 {
+        margin-bottom: 1rem !important;
+    }
+}

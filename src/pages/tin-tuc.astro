@@ -6,7 +6,7 @@ import ServiceCard from "../components/ServiceCard.astro";
 <BaseLayout>
     <!-- HERO -->
     <section
-        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white"
+        class="relative min-h-[20vh] md:min-h-[50vh] bg-[url('/background.jpg')] bg-cover bg-center flex items-center text-white hero-mobile-h"
     >
         <!-- Overlay -->
         <div class="absolute inset-0 bg-black/40"></div>
@@ -22,7 +22,7 @@ import ServiceCard from "../components/ServiceCard.astro";
             </h1>
 
             <div class="mx-auto mt-1 h-0.5 w-24 bg-white mb-6 bg-center"></div>
-<!-- 
+            <!-- 
             <p class="text-base md:text-lg leading-relaxed text-white">
                 Các loại dịch vụ phổ biến Skylane Logistics cung cấp
             </p> -->
@@ -62,7 +62,7 @@ import ServiceCard from "../components/ServiceCard.astro";
                         href="/dich-vu/gui-hang-di-canada"
                     />
 
-                                        <ServiceCard
+                    <ServiceCard
                         title="Order hàng Trung Quốc"
                         description="Chuyển phát nhanh từ Việt Nam đến Canada với dịch vụ chuyên nghiệp."
                         image="/icons/canada.svg"
@@ -73,7 +73,7 @@ import ServiceCard from "../components/ServiceCard.astro";
         </div>
     </section>
 
-        <section class="bg-gray-100 py-12">
+    <section class="bg-gray-100 py-12">
         <div class="container-max px-4 griditems-center">
             <div class="space-y-4 leading-relaxed">
                 <h2 class="text-3xl font-semibold mb-12 leading-tight">
@@ -110,7 +110,7 @@ import ServiceCard from "../components/ServiceCard.astro";
         </div>
     </section>
 
-            <section class="bg-gray-100 py-12">
+    <section class="bg-gray-100 py-12">
         <div class="container-max px-4 griditems-center">
             <div class="space-y-4 leading-relaxed">
                 <h2 class="text-3xl font-semibold mb-12 leading-tight">
@@ -147,7 +147,7 @@ import ServiceCard from "../components/ServiceCard.astro";
         </div>
     </section>
 
-            <section class="bg-gray-100 py-12">
+    <section class="bg-gray-100 py-12">
         <div class="container-max px-4 griditems-center">
             <div class="space-y-4 leading-relaxed">
                 <h2 class="text-3xl font-semibold mb-12 leading-tight">
@@ -185,5 +185,4 @@ import ServiceCard from "../components/ServiceCard.astro";
     </section>
 
     <div class="h-24 bg-gray-100"></div>
-
 </BaseLayout>
